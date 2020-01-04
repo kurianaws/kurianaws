@@ -20,9 +20,9 @@
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/venobox/venobox.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!--<link href="lib/animate/animate.min.css" rel="stylesheet">-->
+  <!--<link href="lib/venobox/venobox.css" rel="stylesheet">-->
+  <!--<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">-->
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 </head>
 
 <body>
-
+    <div id="app">
   <!--==========================
     Header
   ============================-->
@@ -51,9 +51,7 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+	  <li v-for="section in sections"><a :href="section.url">{{section.name}}</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -92,7 +90,7 @@
     <!--==========================
       Speakers Section
     ============================-->
-    <section id="speakers" class="wow fadeInUp">
+    <section id="events" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
           <h2>Events</h2>
@@ -100,11 +98,11 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/logo.jpg" alt="Speaker 1" class="img-fluid">
+          <div v-for="event in events" class="col-lg-4 col-md-6">
+            <div  class="event">
+	      <img v-bind:src="event.pic" alt="Speaker 1" class="img-fluid">
               <div class="details">
-                <h3><a href="linefollower.html">Line Follower</a></h3>
+		  <h3><a v-bind:href="event.url">{{event.title}}</a></h3>
                 <p>Robots will light up the tracks</p>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
@@ -424,8 +422,7 @@
 
   </main>
 
-
-  <!--==========================
+   <!--==========================
     Footer
   ============================-->
   <footer id="footer">
@@ -465,28 +462,31 @@
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
         -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+       </div>
     </div>
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+  </div>  
 
+</body>
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <!--<script src="lib/jquery/jquery-migrate.min.js"></script>-->
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/venobox/venobox.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!--<script src="lib/venobox/venobox.min.js"></script>-->
+  <!--<script src="lib/owlcarousel/owl.carousel.min.js"></script>-->
 
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
-
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-</body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/script.js"></script>
+
 
 </html>
