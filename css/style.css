@@ -1622,6 +1622,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 8px 60px;
   }
 }
+#event-details .container{
+    visibility:visible;
+}
+.event-panel{
+    text-align:left;
+}
 
 @media (max-width: 768px) {
   .back-to-top {

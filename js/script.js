@@ -1,18 +1,16 @@
 Vue.component("panel-1", {
   name: "panel-1",
   template: `
-<div>
+<div >
+<div class="event-panel">
 <button class="btn btn-primary" v-on:click.prevent="closePanel">
-Close Panel
+Close
 </button>
 
-
-   <main id="main" class="main-page">
 
     <!--==========================
       Event details
     ============================-->
-    <section id="event-details" class="wow fadeIn">
       <div class="container">
         <div class="section-header">
           <h2> Details</h2>
@@ -24,35 +22,19 @@ Close Panel
             <img src="img/eventpics/liner.png" alt="Speaker 1" class="img-fluid">
           </div>
 
-          <div class="col-md-6">
-            <div class="details">
+          <div class="col-sm-6">
+            <div class="">
               <h2>Line Follower</h2>
-              <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-              </div>
-              <p></p>
+              <p>Hi this is what line follower is about</p>
             </div>
           </div>
           
         </div>
       </div>
 
-    </section>
-
-  </main>
 
 
-
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer"></footer><!-- #footer -->
-
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-
+</div>
 </div>
 `,
   data() {
