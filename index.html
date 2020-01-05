@@ -110,9 +110,11 @@
         <div class="row">
           <div v-for="event in events" class="col-lg-4 col-md-6">
             <div  class="event">
-	      <img v-bind:src="event.pic" alt="Speaker 1" class="img-fluid">
+	      <img  v-bind:src="event.pic" alt="Speaker 1" class="img-fluid panel-wrap">
               <div class="details">
-		  <h3><a v-bind:href="event.url">{{event.title}}</a></h3>
+		  <!--<h3><a v-bind:href="event.url">{{event.title}}</a></h3>-->
+		  <a v-on:click="showPanel"> {{event.title}}</a>
+		  <slideout-panel></slideout-panel>
                 <p>Robots will light up the tracks</p>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
@@ -478,12 +480,13 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
   </div>  
+</div>
 
 </body>
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
   <!--<script src="lib/jquery/jquery-migrate.min.js"></script>-->
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
@@ -496,6 +499,7 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="lib/vue-slideout-panel/dist/vue-slideout-panel.min.js"></script>
   <script src="js/script.js"></script>
 
 
