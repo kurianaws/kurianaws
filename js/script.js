@@ -27,7 +27,8 @@ var app = new Vue({
     events:[
 	{'name':'liner','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner'},
 	{'name':'Quiz','pic':'img/eventpics/quiz.png','url':'quiz.html','title':'Quiz'}
-    ],
+    ]
+  },
    filters: {
     capitalize: function(value) {
         if (!value) return ''
