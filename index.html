@@ -61,7 +61,7 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-	  <li v-for="section in sections"><a :href="section.url">{{ section.name | capitalize }}</a></li>
+	  <li v-for="section in sections" v-if="section.show==='true'"> <a :href="section.url">{{ section.name | capitalize }}</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -138,7 +138,7 @@
     <!--==========================
       Schedule Section
     ============================-->
-    <section id="schedule" class="section-with-bg" v-if="show['schedule']==='true'">
+    <section id="schedule" class="section-with-bg" v-if="sections['schedule'].show==='true'">
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h2>Event Schedule</h2>
@@ -193,7 +193,7 @@
     <!--==========================
       Gallery Section
     ============================-->
-    <section id="gallery" class="wow fadeInUp" v-if="show['gallery']==='true'">
+    <section id="gallery" class="wow fadeInUp" v-if="sections['gallery'].show==='true'">
 
       <div class="container">
         <div class="section-header">
@@ -218,7 +218,7 @@
     <!--==========================
       Sponsors Section
     ============================-->
-    <section id="supporters" class="section-with-bg wow fadeInUp" hidden="true">
+    <section id="supporters" class="section-with-bg wow fadeInUp" v-if="sections['supporters'].show==='true'">
 
       <div class="container">
         <div class="section-header">
@@ -364,12 +364,12 @@
     <!--==========================
       Contact Section
     ============================-->
-    <section id="contact" class="section-bg wow fadeInUp">
+    <section id="contact" class="section-bg wow fadeInUp" v-if="sections['contact'].show==='true'">
 
       <div class="container">
 
         <div class="section-header">
-          <h2></h2>
+	    <h2></h2>
           <p></p>
         </div>
 
@@ -440,21 +440,7 @@
       <div class="container">
         <div class="row">
          
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              
-            </p>
-
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-
-          </div>
+          <div class="col-lg-3 col-md-6 footer-contact"></div>
 
         </div>
       </div>
