@@ -28,14 +28,7 @@ var app = new Vue({
 	{'name':'liner','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner'},
 	{'name':'Quiz','pic':'img/eventpics/quiz.png','url':'quiz.html','title':'Quiz'}
     ],
-    show: {
-	'suppourters':'false',
-	'gallery':'false',
-	'schedule':'false',
-	'contact':'false'},
-    venue:'ER& DCI -IT, CDAC TVM'
-  },
-    filters: {
+   filters: {
     capitalize: function(value) {
         if (!value) return ''
         value = value.toString()
