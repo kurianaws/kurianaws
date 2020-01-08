@@ -474,15 +474,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   position: relative;
 }
-#intro:hover{
+ #intro:hover{
   width: 100%;
   height: 100vh;
   background: url(https://lh3.google.com/u/0/d/1rBW3084oMdt95yVp4Z-Hdwv2qWMeETUV=w1440-h826-iv1) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
-
 }
+
+ #intro:focus{
+  width: 100%;
+  height: 100vh;
+  background: url(https://lh3.google.com/u/0/d/1rBW3084oMdt95yVp4Z-Hdwv2qWMeETUV=w1440-h826-iv1) top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
 
 #intro:before {
   content: "";
