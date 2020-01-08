@@ -28,7 +28,7 @@ var app = new Vue({
 	{'name':'Liner','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner'},
 	{'name':'Qriosity','pic':'img/eventpics/quiz.png','url':'quiz.html','title':'Qriosity'},
 	{'name':'Be The Stark','pic':'img/eventpics/bethestark.png','url':'bethestark.html','title':'Be The Stark'},
-	{'name':'Pitch Perfect','pic':'img/eventpics/quiz.png','url':'pitch.html','title':'Pitch Perfect'},
+	{'name':'Pitch Perfect','pic':'img/eventpics/pitch.png','url':'pitch.html','title':'Pitch Perfect'},
 	{'name':'Resist The Flow','pic':'img/eventpics/resisttheflow.png','url':'resist.html','title':'Resist The Flow'},
 	{'name':'Electricuit','pic':'img/eventpics/electricuit.png','url':'electricuit.html','title':'Electricuit'}
     ]
