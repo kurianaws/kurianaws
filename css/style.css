@@ -469,28 +469,34 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/logo.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
 }
- #intro:hover{
+#introvid {
   width: 100%;
-  height: 100vh;
-  background: url(https://lh3.google.com/u/0/d/1rBW3084oMdt95yVp4Z-Hdwv2qWMeETUV=w1440-h826-iv1) top center;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
+  height: 100%;
+  background-size: stretch;
+  /*overflow: hidden;*/
+  position: absolute;
+  opacity:0;
+}
+#introimg {
+  width: 100%;
+  height: 100%;
+  background-size: stretch;
+  /*overflow: hidden;*/
+  position: absolute;
+  opacity:100;
+}
+#introimg:hover{
+ opacity:0;
+}
+#introvid:hover{
+    opacity:100;
 }
 
- #intro:focus{
-  width: 100%;
-  height: 100vh;
-  background: url(https://lh3.google.com/u/0/d/1rBW3084oMdt95yVp4Z-Hdwv2qWMeETUV=w1440-h826-iv1) top center;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-}
+
 
 
 #intro:before {
@@ -1682,3 +1688,4 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 10px;
   }
 }
+
