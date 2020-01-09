@@ -46,6 +46,7 @@
 </head>
 
 <body>
+    <div id="overlay"><div class="loader">loading...</div></div>
     <div id="app">
   <!--==========================
     Header
@@ -70,8 +71,8 @@
   
   <section id="intro" >
     <div class="intro-container wow fadeIn">
-	<img id="introimg" src="img/logo.jpg" /> 
-	<img id="introvid" src="vid/intro.gif"/> 
+	<img id="introimg" v-show="showimg" src="img/logo.jpg" /> 
+	<img id="introvid" v-show="showvid" src="vid/intro.gif"/> 
     </div>
   </section>
 
@@ -466,7 +467,6 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
   </div>  
-
 </body>
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>

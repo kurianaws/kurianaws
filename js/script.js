@@ -1,5 +1,8 @@
 var app = new Vue({
   el: "#app",
+  mounted: function(){
+     setTimeout(()=>{ this.showimg = true; this.showvid=false}, 35000);
+  },
   data: {
     sections:{ 
 	'home': {'name':'home',
@@ -31,7 +34,9 @@ var app = new Vue({
 	{'name':'Pitch Perfect','pic':'img/eventpics/pitch.png','url':'pitch.html','title':'Pitch Perfect'},
 	{'name':'Resist The Flow','pic':'img/eventpics/resisttheflow.png','url':'resist.html','title':'Resist The Flow'},
 	{'name':'Electricuit','pic':'img/eventpics/electricuit.png','url':'electricuit.html','title':'Electricuit'}
-    ]
+    ],
+    showimg:false,
+    showvid:true,
   },
    filters: {
     capitalize: function(value) {
@@ -40,4 +45,8 @@ var app = new Vue({
         return value.charAt(0).toUpperCase() + value.slice(1)
     }
 }});
-
+$(document).ready(
+    function(){
+	$('#overlay').fadeOut();
+    }
+)
