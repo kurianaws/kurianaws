@@ -117,7 +117,7 @@
               <div class="details">
 		  <h3><a v-bind:href="event.url">{{event.title}}</a></h3>
 		  <p>{{event.tagline}}</p>
-                <div class="social">
+                <div class="social" v-if="event.social=='true'">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
                   <a href=""><i class="fa fa-google-plus"></i></a>
