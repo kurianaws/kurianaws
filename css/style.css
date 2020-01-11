@@ -1692,6 +1692,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background:rgba(0,0,0,0.9);
   transition: 1s 0.4s;
 }
+
 .loader,
 .loader:before,
 .loader:after {
