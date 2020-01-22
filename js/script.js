@@ -11,6 +11,9 @@ var app = new Vue({
 	'about': {'name':'about',
 	    'url':'#about',
 	    'show':'true'},
+	'work': {'name':'workshops',
+	    'url':'#work',
+	    'show':'false'},
 	'events': {'name':'events',
 	    'url':'#events',
 	    'show':'true'},
@@ -45,6 +48,10 @@ var app = new Vue({
 	{
 	    'title':'TRIKA 2020',
 	    'text':'TRIKA 2020 is a technical fest conducted by Department of Electronics, ER&DCI Institute of Technology. The event involves various competitions to test the technical skills of participants and their readiness to face a competitive and evolving technology scenario. It also includes a hands on session and endeavors to bring industry closer to academia to face the technology challenges that we continue to face. TRIKA 2020 is an effort to allow the wider student community to leverage the opportunity of interacting with technology experts within the CDAC community by bringing them together on the same platform.'}],
+    speakers:[
+	{'name':'','pic':'','url':'','title':''},
+	{'name':'','pic':'','url':'','title':''}
+    ],
     showimg:false,
     showvid:true,
   },

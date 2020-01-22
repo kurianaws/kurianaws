@@ -95,6 +95,33 @@
       </div>
     </section>
 
+    <section id="work" class="wow fadeInUp" v-if="sections['work'].show==='true'">
+      <div class="container">
+        <div class="section-header">
+          <h2>Workshops</h2>
+        </div>
+
+        <div class="row">
+          <div v-for="event in events" class="col-lg-4 col-md-6">
+            <div  class="event">
+	      <img v-bind:src="event.pic" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+		  <h3><a v-bind:href="event.url">{{event.title}}</a></h3>
+		  <p>{{event.tagline}}</p>
+                <div class="social" v-if="event.social=='true'">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+	</div>
+	</div>
+    </section>
+
+     
     <!--==========================
       Speakers Section
     ============================-->
