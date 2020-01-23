@@ -75,7 +75,7 @@
   <section id="intro" >
     <div class="intro-container wow fadeIn">
 	<img id="introimg" v-show="showimg" src="img/logo.jpg" /> 
-	<img id="introvid" v-show="showvid" src="vid/intro.gif"/> 
+	<!--<img id="introvid" v-show="showvid" src="vid/intro.gif"/> -->
     </div>
   </section>
 
@@ -87,13 +87,17 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6" v-for="item in aboutus">
+          <div class=" aboutus col-lg-6" v-for="item in aboutus">
 	      <h2>{{item.title}}</h2>
 	      <p>{{item.text}}</p>
           </div>
         </div>
       </div>
     </section>
+
+
+
+
 
     <section id="work" class="wow fadeInUp" v-if="sections['work'].show==='true'">
       <div class="container">
@@ -102,12 +106,12 @@
         </div>
 
         <div class="row">
-          <div v-for="event in events" class="col-lg-4 col-md-6">
+          <div v-for="event in speakers" class="col-lg-4 col-md-6">
             <div  class="event">
 	      <img v-bind:src="event.pic" alt="Speaker 1" class="img-fluid">
               <div class="details">
 		  <h3><a v-bind:href="event.url">{{event.title}}</a></h3>
-		  <p>{{event.tagline}}</p>
+		  <p>{{event.name}}</p>
                 <div class="social" v-if="event.social=='true'">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
@@ -120,6 +124,42 @@
 	</div>
 	</div>
     </section>
+
+
+     <section id="location" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Location</h2>
+        </div>
+        <div class="row">
+	    <a    href="https://www.google.com/maps/dir/@9.2403589,76.0566778,9z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3b05bbcc7e62d5d9:0x5cb3e5dd0181788d!2m2!1d76.9612563!2d8.5101088"><img class="map-button"src=" img/map.png"></img></a> 
+        </div>
+      </div>
+
+    </section>
+
+    <section id="registration" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Registration</h2>
+        </div>
+
+        <div class="row">
+          <div v-for="event in events" class="col-lg-4 col-md-6">
+            <div  class="event">
+        <img v-bind:src="event.pic" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+      <h3><a v-bind:href="event.url">Registration Holder</a></h3>
+      <p><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSsqNxBCOuvOJWzE1NeUUfiT16vjAEpXNRWnzwfKV4W9Ve0Q/viewform?embedded=true" width="640" height="841" frameborder="0" marginheight="0" marginwidth="0">LoadingÖ</iframe></p>
+                <div class="social" v-if="event.social=='true'">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
      
     <!--==========================
