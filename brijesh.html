@@ -39,29 +39,28 @@
 </head>
 
 <body>
+<div id="app">
 
   <!--==========================
     Header
   ============================-->
-  <header id="header" class="header-fixed">
+  <header id="header">
     <div class="container">
 
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="index.html#intro" class="scrollto"><img src="img/logo.jpg" alt="" title=""></a>
+        <a href="#intro" class="scrollto" ><img src="img/logo.jpg" alt="" title=""></a>
       </div>
 
-      
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html#intro">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#contact">Contact Us</a></li>
+    <li v-for="section in sections" v-if="section.show==='true'"> <a :href="'index.html/#'+section.url">{{ section.name | capitalize }}</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
+
 
   <main id="main" class="main-page">
 
@@ -176,6 +175,10 @@ After riding on the back of corporate success, Dr. Brijesh Madhavan is now on a 
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script src="js/script2.js"></script>
+</div>
 </body>
 
 </html>
