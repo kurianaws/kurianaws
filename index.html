@@ -122,21 +122,6 @@
 
 
 
-
-
-
-     <section id="location" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Location</h2>
-        </div>
-        <div class="row">
-	    <a     class="map-button" href="https://www.google.com/maps/dir/@9.2403589,76.0566778,9z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3b05bbcc7e62d5d9:0x5cb3e5dd0181788d!2m2!1d76.9612563!2d8.5101088"><img src=" img/map.png"></img></a> 
-        </div>
-      </div>
-
-    </section>
-
     <section id="registration" class="wow fadeInUp" v-if="sections['Registration'].showsection==='true'">
       <div class="container registration">
         <div class="section-header">
@@ -426,7 +411,9 @@
 
         <div class="section-header">
 	    <h2></h2>
-          <p></p>
+<a     class="map-button" href="https://www.google.com/maps/dir/@9.2403589,76.0566778,9z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3b05bbcc7e62d5d9:0x5cb3e5dd0181788d!2m2!1d76.9612563!2d8.5101088"><img src=" img/map.png"></img></a> 
+
+
         </div>
 
         <div class="row contact-info">
@@ -435,7 +422,7 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3></h3>
-              <address>A</address>
+		<address>{{address}}</address>
             </div>
           </div>
 
@@ -443,7 +430,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855"></a></p>
+              <p><a href=""></a></p>
             </div>
           </div>
 
@@ -451,7 +438,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
+              <p><a href=""></a></p>
             </div>
           </div>
 
