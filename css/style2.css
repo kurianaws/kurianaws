@@ -1336,6 +1336,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
+  padding-left: 24px;
 }
 
 #contact .contact-info i {
