@@ -66,6 +66,8 @@ var app = new Vue({
 
     ],
     address:'ER&DCI Institute of Technology CDAC Campus Vellayambalam Thiruvananthapuram India, PIN - 695033',
+    contact:'Ananth: 9188728597 Girish: 9497270564',
+      Email: 'trika2k20@gmail.com',
     showimg:false,
     showvid:true,
   },

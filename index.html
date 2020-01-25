@@ -430,7 +430,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href=""></a></p>
+	      <p><a href="">{{contact}}</a></p>
             </div>
           </div>
 
@@ -438,7 +438,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href=""></a></p>
+	      <p><a v-bind:href="'mailto:'+Email">{{Email}}</a></p>
             </div>
           </div>
 
