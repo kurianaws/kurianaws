@@ -1759,6 +1759,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .map-button{
     width: -moz-available;
+    text-align: center;
+}
+.map-button img{
+  max-width: 100%;
 }
 @-webkit-keyframes load1 {
   0%,
