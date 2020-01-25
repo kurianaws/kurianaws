@@ -469,12 +469,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url("../img/logo.jpg");
   background-size: cover;
   /*overflow: hidden;*/
   position: relative;
   opacity:100;
 }
+
 .registration
 {
   background:#c2b75f70;
@@ -484,6 +484,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
+
 #introvid {
   width: 100%;
   height: 100%;
@@ -491,13 +492,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*overflow: hidden;*/
   position: absolute;
 }
-#introimg {
-  width: 100%;
+.intro-container{
   height: 100%;
-  background-size: cover;
+}
+#introimg {
+  min-width: 100%;
   overflow: hidden;
   position: absolute;
-  opacity:0;
+  opacity:100;
 }
 
 .aboutus{

@@ -48,6 +48,7 @@
   ======================================================= -->
 </head>
 
+
 <body widt="device-width">
     <div id="overlay"><div class="loader">loading...</div></div>
     <div id="app">
@@ -60,7 +61,7 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="#intro" class="scrollto" ><img src="img/logo.jpg" alt="" title=""></a>
+        <a v-bind:href="home+'#intro'" class="scrollto" ><img src="img/logo.jpg" alt="" title=""></a>
       </div>
 
       <nav id="nav-menu-container">
@@ -74,7 +75,7 @@
   
   <section id="intro" >
     <div class="intro-container wow fadeIn">
-	<!--<img id="introimg" src="img/logo.jpg" /> -->
+	<img id="introimg" src="img/logo.png" /> 
 	<!--<img id="introvid" v-show="showvid" src="vid/intro.gif"/> -->
     </div>
   </section>
