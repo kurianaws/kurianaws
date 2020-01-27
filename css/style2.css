@@ -1793,13 +1793,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #intro .tagline{
     z-index:22;
-    color:#ffd52f;
-	/*color: #25ca37;*/
+    color:#2f94ff;
+    /*color:#ffd52f;*/
+    /*color: #25ca37;*/
     position:absolute;
     font-family: 'Inconsolata', monospace;
     font-weight:bold;
     font-size:x-large;
     top:9%;
+    opacity:0;
     
 }
 @font-face{
