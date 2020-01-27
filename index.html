@@ -103,9 +103,9 @@
           <h2>Workshops</h2>
         </div>
 
-        <div class="row">
-          <div v-for="event in speakers" class="col-lg-4 col-md-6"  v-if="event.show=='true'">
-            <div  class="event img-fluid">
+        <div class="row speaker-row">
+          <div v-for="event in speakers" class="col-lg-6 col-md-6 speakers"  v-if="event.show=='true'">
+            <div  class="event img-fluid speaker">
 	      <img v-bind:src="event.pic" alt= "Speaker 1" />
               <div class="details">
 		  <h3><a v-bind:href="event.url">{{event.title}}</a></h3>

@@ -61,7 +61,7 @@ var app = new Vue({
 	    'title':'TRIKA 2020',
 	    'text':'TRIKA 2020 is a technical fest conducted by Department of Electronics, ER&DCI Institute of Technology. The event involves various competitions to test the technical skills of participants and their readiness to face a competitive and evolving technology scenario. It also includes a hands on session and endeavors to bring industry closer to academia to face the technology challenges that we continue to face. TRIKA 2020 is an effort to allow the wider student community to leverage the opportunity of interacting with technology experts within the CDAC community by bringing them together on the same platform.'}],
     speakers:[
-	{'name':'Capt(IN) Biji V.M','pic':'','url':'','title':'Introduction To Hardware Reliability Tools','show':'false'},
+	{'name':'Capt(IN) Bijli V.M','pic':'img/eventpics/bijli.jpg','url':'bijli.html','title':'Introduction To Hardware Reliability Tools','show':'true'},
 	{'name':'Mr. Biju Nair','pic':'img/eventpics/biju.jpeg','url':'biju.html','title':'Industry 4.0: A Preview On Industrial Iot','show':'true'},
 	{'name':'Dr. Brijesh Madhavan','pic':'img/eventpics/brijesh.jpeg','url':'brijesh.html','title':'Role of AI in Electronics Industry Of The Future','show':'true'},
 	{'name':'Libin TT','pic':'img/eventpics/libint.jpg','url':'libin.html','title':'Microprocessor Architecture And Implementations','show':'true'}
