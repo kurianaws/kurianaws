@@ -773,7 +773,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-style: italic;
 }
 #work{
-    background:url("../img/workshop-bg.png");
+    /*background:url("../img/workshop-bg.png");*/
     background-size:cover;
     background-position-y:775px;
 }
@@ -809,7 +809,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 #work .section-header h2{
-    color:#fff;
+    /*color:#fff;*/
 }
 
 #work .event .details a:hover {
