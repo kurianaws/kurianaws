@@ -4,6 +4,7 @@ var app = new Vue({
      setTimeout(()=>{ this.showimg = true; this.showvid=false}, 35000);
   },
   data: {
+    tagline:"Next dimension of technology",
     sections:{ 
 	'home': {'name':'home',
 	    'url':'#intro',

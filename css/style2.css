@@ -1791,3 +1791,18 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 5em;
   }
 }
+#intro .tagline{
+    z-index:22;
+    color:#ffd52f;
+    position:absolute;
+    font-family: 'Inconsolata', monospace;
+    font-weight:bold;
+    font-size:x-large;
+    top:9%;
+    
+}
+@font-face{
+
+    font-family: 'Inconsolata', monospace;
+    src:url("inconsolata/font.ttf");
+}
