@@ -42,13 +42,13 @@ var app = new Vue({
     },
 
     events:[
-	{'name':'Photography','pic':'img/eventpics/photo.jpg','url':'photo.html','title':'Photography','tagline':'"Taking an image, freezing a moment, reveals how rich reality truly is"'},
-	{'name':'Liner','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner','tagline':'"Robots will light up the track"'},
-	{'name':'Qriosity','pic':'img/eventpics/quriosity.png','url':'quiz.html','title':'Qriosity','tagline':'"Prove your knowledge"'},
-	{'name':'Be The Stark','pic':'img/eventpics/bethestark.png','url':'bethestark.html','title':'Be The Stark','tagline':'"Show you are worthy"'},
-	{'name':'Pitch Perfect','pic':'img/eventpics/pitch.png','url':'pitch.html','title':'Pitch Perfect','tagline':'"Sell your idea "'},
-	{'name':'Resist The Flow','pic':'img/eventpics/resisttheflow.png','url':'resist.html','title':'Resist The Flow','tagline':'"Block it like ohm"'},
-	{'name':'Electricuit','pic':'img/eventpics/electricuit.png','url':'electricuit.html','title':'Electricuit','tagline':'"Bug the bugs"'}
+	{'name':'Photography','lr':'img/eventpicslr/photo.jpg','pic':'img/eventpics/photo.jpg','url':'photo.html','title':'Photography','tagline':'"Taking an image, freezing a moment, reveals how rich reality truly is"'},
+	{'name':'Liner','lr':'img/eventpicslr/liner.png','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner','tagline':'"Robots will light up the track"'},
+	{'name':'Qriosity','lr':'img/eventpicslr/quriosity.png','pic':'img/eventpics/quriosity.png','url':'quiz.html','title':'Qriosity','tagline':'"Prove your knowledge"'},
+	{'name':'Be The Stark','lr':'img/eventpicslr/bethestark.png','pic':'img/eventpics/bethestark.png','url':'bethestark.html','title':'Be The Stark','tagline':'"Show you are worthy"'},
+	{'name':'Pitch Perfect','lr':'img/eventpicslr/pitch.png','pic':'img/eventpics/pitch.png','url':'pitch.html','title':'Pitch Perfect','tagline':'"Sell your idea "'},
+	{'name':'Resist The Flow','lr':'img/eventpicslr/resisttheflow.png','pic':'img/eventpics/resisttheflow.png','url':'resist.html','title':'Resist The Flow','tagline':'"Block it like ohm"'},
+	{'name':'Electricuit','lr':'img/eventpicslr/electricuit.png','pic':'img/eventpics/electricuit.png','url':'electricuit.html','title':'Electricuit','tagline':'"Bug the bugs"'}
     ],
     aboutus:[
 	{
