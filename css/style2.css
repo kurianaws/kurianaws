@@ -1868,5 +1868,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     max-width:40%;
 }
 .poster{
-background-size:cover;
+background-size:stretch;
+background-repeat:no-repeat;
 }
