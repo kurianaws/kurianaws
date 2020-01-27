@@ -152,7 +152,8 @@
 
         <div class="row">
           <div v-for="event in events" class="col-lg-4 col-md-6">
-            <div  class="event poster" :style="{ backgroundImage: `url(${event.lr})`}">
+	      <div  class="event" >
+	      <!--<div  class="event poster" :style="{ backgroundImage: `url(${event.lr})`}" style="{'background-size':'cover';'background-repeat':'no-repeat';}">-->
 	      <img v-bind:src="event.pic" alt="Speaker 1" class="img-fluid">
               <div class="details">
 		  <h3><a v-bind:href="event.url">{{event.title}}</a></h3>
