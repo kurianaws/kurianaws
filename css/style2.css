@@ -1867,3 +1867,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .speaker img{
     max-width:40%;
 }
+.poster{
+background-size:cover;
+}
