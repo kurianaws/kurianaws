@@ -42,6 +42,7 @@ var app = new Vue({
     },
 
     events:[
+	{'name':'Photography','pic':'img/eventpics/photo.jpg','url':'photo.html','title':'Photography','tagline':'"Then and now"'},
 	{'name':'Liner','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner','tagline':'"Robots will light up the track"'},
 	{'name':'Qriosity','pic':'img/eventpics/quriosity.png','url':'quiz.html','title':'Qriosity','tagline':'"Prove your knowledge"'},
 	{'name':'Be The Stark','pic':'img/eventpics/bethestark.png','url':'bethestark.html','title':'Be The Stark','tagline':'"Show you are worthy"'},
