@@ -42,14 +42,17 @@ var app = new Vue({
     },
 
     events:[
-	//{'name':'Photography','lr':'img/eventpicslr/photo.jpg','pic':'img/eventpics/photo.jpg','url':'photo.html','title':'Photography','tagline':'"Taking an image, freezing a moment, reveals how rich reality truly is"'},
-	{'name':'Liner','lr':'img/eventpicslr/liner.png','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner','tagline':'"Robots will light up the track"','fee':200,'disc':150},
-	{'name':'Qriosity','lr':'img/eventpicslr/quriosity.png','pic':'img/eventpics/quriosity.png','url':'quiz.html','title':'Qriosity','tagline':'"Prove your knowledge"','fee':200},
-	{'name':'Be The Stark','lr':'img/eventpicslr/bethestark.png','pic':'img/eventpics/bethestark.png','url':'bethestark.html','title':'Be The Stark','tagline':'"Show you are worthy"','fee':300},
-	{'name':'Pitch Perfect','lr':'img/eventpicslr/pitch.png','pic':'img/eventpics/pitch.png','url':'pitch.html','title':'Pitch Perfect','tagline':'"Sell your idea "','fee':200},
-	{'name':'Resist The Flow','lr':'img/eventpicslr/resisttheflow.png','pic':'img/eventpics/resisttheflow.png','url':'resist.html','title':'Resist The Flow','tagline':'"Block it like ohm"','fee':100},
-	{'name':'Electricuit','lr':'img/eventpicslr/electricuit.png','pic':'img/eventpics/electricuit.png','url':'electricuit.html','title':'Electricuit','tagline':'"Bug the bugs"','fee':250}
+	{'name':'Photography','lr':'img/eventpicslr/photo.jpg','pic':'img/eventpics/photo.jpg','url':'photo.html','title':'Photography','tagline':'"Taking an image, freezing a moment, reveals how rich reality truly is"'},
+	{'active':'true','name':'Liner','lr':'img/eventpicslr/liner.png','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner','tagline':'"Robots will light up the track"','fee':200,'disc':150,'groupdesc':'group of 2'},
+	{'active':'true','name':'Qriosity','lr':'img/eventpicslr/quriosity.png','pic':'img/eventpics/quriosity.png','url':'quiz.html','title':'Qriosity','tagline':'"Prove your knowledge"','fee':200},
+	{'group':'true','active':'true','name':'Be The Stark','lr':'img/eventpicslr/bethestark.png','pic':'img/eventpics/bethestark.png','url':'bethestark.html','title':'Be The Stark','tagline':'"Show you are worthy"','fee':300},
+	{'group':'true','active':'true','name':'Pitch Perfect','lr':'img/eventpicslr/pitch.png','pic':'img/eventpics/pitch.png','url':'pitch.html','title':'Pitch Perfect','tagline':'"Sell your idea "','fee':200},
+	{'group':'true','active':'true','name':'Electricuit','lr':'img/eventpicslr/electricuit.png','pic':'img/eventpics/electricuit.png','url':'electricuit.html','title':'Electricuit','tagline':'"Bug the bugs"','fee':250},
+	{'active':'true','name':'Resist The Flow','lr':'img/eventpicslr/resisttheflow.png','pic':'img/eventpics/resisttheflow.png','url':'resist.html','title':'Resist The Flow','tagline':'"Block it like ohm"','fee':100},
+	{'active':'true','name':'Technical Conference','lr':'','pic':'img/eventpics/talk.png','url':'conf.html','title':'Technical Conference','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3'},
+	{'active':'true','name':'Workshop','lr':'','pic':'img/eventpics/workshop.png','url':'work.html','title':'Workshop','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3'}
     ],
+    value:'',
     aboutus:[
 	{
 	    'title':'TRIKA 2020',
@@ -62,10 +65,10 @@ var app = new Vue({
 	    'text':'ER&DCI Institute of Technology is the academic wing of Centre for Development of Advanced Computing (CDAC) Thiruvananthapuram(Vellayambalam). The institute offers postgraduate programs in VLSI & Embedded Systems and Cyber Forensic & Information Security and is affiliated with APJ Abdul Kalam Technological University. The meritorious students of both M.Tech courses will get a chance to do their academic projects as part of the live projects in CDAC and get guidance from industry experts in various groups of CDAC Thiruvananthapuram. The Department of Electronics was established in the year 2006 and offers a postgraduate programme in Electronics and Communication Engineering with specialization in VLSI and Embedded Systems.'}
 ],
     speakers:[
-	{'type':'conference','name':'Capt(IN) Bijli V.M','pic':'img/eventpics/bijli.jpg','url':'bijli.html','title':'Introduction To Hardware Reliability Tools','show':'true'},
-	{'type':'conference','name':'Mr. Biju Nair','pic':'img/eventpics/biju.jpeg','url':'biju.html','title':'Industry 4.0: A Preview On Industrial Iot','show':'true'},
-	{'type':'conference','name':'Dr. Brijesh Madhavan','pic':'img/eventpics/brijesh.jpeg','url':'brijesh.html','title':'Role of AI in Electronics Industry Of The Future','show':'true'},
-	{'type':'workshop','name':'Libin TT','pic':'img/eventpics/libint.jpg','url':'libin.html','title':'Microprocessor Architecture And Implementations','show':'true'}
+	{'groupdesc':'group of 3','type':'conference','name':'Capt(IN) Bijli V.M','pic':'img/eventpics/bijli.jpg','url':'bijli.html','title':'Introduction To Hardware Reliability Tools','show':'true'},
+	{'groupdesc':'group of 3','type':'conference','name':'Mr. Biju Nair','pic':'img/eventpics/biju.jpeg','url':'biju.html','title':'Industry 4.0: A Preview On Industrial Iot','show':'true'},
+	{'groupdesc':'group of 3','type':'conference','name':'Dr. Brijesh Madhavan','pic':'img/eventpics/brijesh.jpeg','url':'brijesh.html','title':'Role of AI in Electronics Industry Of The Future','show':'true'},
+	{'groupdesc':'group of 3','type':'workshop','name':'Libin TT','pic':'img/eventpics/libint.jpg','url':'libin.html','title':'Microprocessor Architecture And Implementations','show':'true'}
 
     ],
     address:'ER&DCI Institute of Technology CDAC Campus Vellayambalam Thiruvananthapuram India, PIN - 695033',
@@ -77,8 +80,8 @@ var app = new Vue({
     showvid:true,
     total:0,
     workshop:[
-	{'title':'Day-1:Introduction To Hardware Reliability Tools , Industry 4.0: A Preview On Industrial Iot Role of AI in Electronics Industry Of The Future (food included)','fee':500,'discfee':1250},
-	{'title':'Microprocessor Architecture and implementation(food included)','fee':500,'discfee':1250}
+	{'groupdesc':'group of 3','title':'Day-1:Introduction To Hardware Reliability Tools , Industry 4.0: A Preview On Industrial Iot Role of AI in Electronics Industry Of The Future (food included)','fee':500,'disc':1250},
+	{'groupdesc':'group of 3','title':'Microprocessor Architecture and implementation(food included)','fee':500,'disc':1250}
     ]
   },
   methods:{

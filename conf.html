@@ -70,86 +70,15 @@
     <section id="event-details" class="wow fadeIn">
       <div class="container">
         <div class="section-header">
-          <h2> Register Here</h2>
+          <h2> Details</h2>
           <p></p>
         </div>
 
         <div class="row">
-          <div class="col-lg-12">
-            <div class="details">
-              <h2>Calculate your fee</h2>
-	      
-	      <p>
-	    	<ul>
-		  <li>Go through the fee calculator</li>
-		  <li>Pay the total amount, note your transaction Id </li>
-		  <li>Click the register link and fill in the details</li>
-		</ul>
-	      </p>
-	      <p>
-	      <div class="calculator">
-		  <div class="table-responsive">
-		      <table class="table table-striped">
-			  <thead >
-			      <th>Event</th>
-			      <th>Description</th>
-			      <th>Add/Remove</th>
-			  </thead>
-			  <tbody>
-			      <tr v-for="event in events">
-				  <td>
-				      {{event.title}}  
-				  </td>
-				  <td>
-					<span v-if="event.group==='true'" type="radio" name="group" value=event.title > Choose only one among <b>simultaneous</b> events</span>
-				    <div v-if="event.disc">
-					  <p>
-						  {{event.groupdesc}}
-					  </p>
-					  <li>individual &#8377{{event.fee}}</li>
-					  <li>group &#8377{{event.disc}}</li>
-				     </div>
-
-				  </td>
-				  <td>
-				      <div v-if="event.active==='true'">
-					<button v-if="event.disc" v-on:click="addAmount(event.disc)" class="btn btn-success">+ group</button>
-					<button v-if="event.disc" v-on:click="remove(event.disc)" class="btn btn-warning">- group</button>
-					<button v-on:click="addAmount(event.fee)" class="btn btn-success">+ individual</button>
-					<button v-on:click="remove(event.fee)" class="btn btn-warning">- individual</button>
-				     </div>
-				  </td>
-
-			      </tr >
-			      </tbody>
-		      </table>
-		  </div>
-		  <button v-on:click="reset()" class="btn btn-info">clear</button>
-		  <div class="total"> Please pay &#8377{{total}} at {{accountDetails}}</div>
-	      </div>
-	      After you have made the payment(through neft/imps/UPI) and noted the transaction id, click down below and enter your details.<br/>
-	      Warning: Please check your selection carefully, money once transferred <b>will not be refunded</b>. 
-	      <div>
-		  <button class="btn btn-success"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSsqNxBCOuvOJWzE1NeUUfiT16vjAEpXNRWnzwfKV4W9Ve0Q/viewform?usp=sf_link">Register</a></button>
-	      </div>
-	      </p>
-           <div class="social">
-         
-              <a href="https://twitter.com/intent/tweet?text=http://trika.org.in&button_hashtag=Trika" class="twitter"><i class="fa fa-twitter"></i></a>
-
-  <!-- Your share button code -->
-    <div class="fb-share-button" 
-    data-href="http://trika.org.in/quiz.html" 
-    data-layout="button_count">
-    </div>
-                <a href="" hidden="true"><i class="fa fa-google-plus"></i></a>
-                <a href="" hidden="true"><i class="fa fa-linkedin"></i></a>
-                </div>
-
+          <div class="col-12">
+            <img src="img/eventpics/talk.png" alt="Quiz" class="img-fluid">
           </div>
 
-
-            </div>
           </div>
           
         </div>
