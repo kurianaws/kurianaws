@@ -358,7 +358,7 @@ h6 {
 
 #mobile-nav-toggle {
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   z-index: 999;
   margin: 15px 15px 0 0;
@@ -1846,7 +1846,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     /*color:#2f94ff;*/
     /*color:#ffd52f;*/
     /*color: #25ca37;*/
-    color: #2f77ffbf;
+    /*color: #2f77ffbf;*/
+    color: white;
     position:absolute;
     font-family: 'Inconsolata', monospace;
     font-weight:bold;
@@ -1867,7 +1868,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 .speaker img{
     max-width:40%;
 }
+
 .poster{
-background-size:stretch;
-background-repeat:no-repeat;
+background-repeat: no-repeat !important;
+background-size:100%;
+min-height: 427px !important; 
 }
+

@@ -61,7 +61,7 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a v-bind:href="home+'#intro'" class="scrollto" ><img src="img/logo.jpg" alt="" title=""></a>
+        <!--<a v-bind:href="home+'#intro'" class="scrollto" ><img src="img/logo.jpg" alt="" title=""></a>-->
       </div>
 
       <nav id="nav-menu-container">
@@ -153,8 +153,10 @@
         <div class="row">
           <div v-for="event in events" class="col-lg-4 col-md-6">
 	      <div  class="event" >
-	      <!--<div  class="event poster" :style="{ backgroundImage: `url(${event.lr})`}" style="{'background-size':'cover';'background-repeat':'no-repeat';}">-->
-	      <img v-bind:src="event.pic" alt="Speaker 1" class="img-fluid">
+		  <div   v-bind:style="{ backgroundImage: `url(${event.lr}`}" class="img-fluid poster">
+		<img v-bind:src="event.pic" alt="Speaker 1" class="img-fluid"  >
+	      </div>
+
               <div class="details">
 		  <h3><a v-bind:href="event.url">{{event.title}}</a></h3>
 		  <p>{{event.tagline}}</p>
