@@ -80,7 +80,16 @@
 	<!--<img id="introvid" v-show="showvid" src="vid/intro.gif"/> -->
     </div>
   </section>
+<section  v-if="sections['Registration'].show==='true'" id="registration" class="wow fadeInUp" >
+      <div class="registration">
 
+        <div class="row">
+          <div class="col-lg-12 ">
+		<p><button class="btn btn-primary"><a href="register.html">Register</a></button></p>
+          </div>
+	</div>
+
+    </section> 
   <main id="main">
 
     <!--==========================
@@ -100,15 +109,16 @@
 <section id="work" class="wow fadeInUp" v-if="sections['work'].show==='true'">
       <div class="container">
         <div class="section-header">
-          <h2>Workshops</h2>
+          <h2>Speakers</h2>
         </div>
 
         <div class="row speaker-row">
           <div v-for="event in speakers" class="col-lg-6 col-md-6 speakers"  v-if="event.show=='true'">
             <div  class="event img-fluid speaker">
 	      <img v-bind:src="event.pic" alt= "Speaker 1" />
-              <div class="details">
+	      <div class="details" v-bind:class="event.type">
 		  <h3><a v-bind:href="event.url">{{event.title}}</a></h3>
+		  <h4>{{event.type}}</h4>
 		  <p>{{event.name}}</p>
               </div>
             </div>
@@ -124,23 +134,7 @@
 
 
 
-    <section id="registration" class="wow fadeInUp" v-if="sections['Registration'].showsection==='true'">
-      <div class="container registration">
-        <div class="section-header">
-          <h2>Registration</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div  class="event">
-              <div class="details">
-		<p><button class="btn btn-primary"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdSsqNxBCOuvOJWzE1NeUUfiT16vjAEpXNRWnzwfKV4W9Ve0Q/viewform?usp=sf_link">Register</a></button></p>
-              </div>
-            </div>
-          </div>
-	</div>
-
-    </section>   
+      
     <!--==========================
       Speakers Section
     ============================-->

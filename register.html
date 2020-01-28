@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>trika</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta property="og:site"          content="http://trika.org.in" />
+  <meta property="og:url"          content="http://trika.org.in/quiz.html" />
+  <meta property="og:title"         content="Quriosity" />
+  <meta property="og:description"   content="Prove your knowledge" />
+  <meta property="og:image"         content="http://trika.org.in/img/eventpics/quiz.png" />
+
+
+
+  <!-- Favicons -->
+  <link href="img/logo.jpg" rel="icon">
+  <link href="img/logo.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style2.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <div id="app">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a v-bind:href="home+'#intro'" class="scrollto" ><img src="img/logo.jpg" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+    <li v-for="section in sections" v-if="section.show==='true'"> <a :href="'index.html#'+section.url">{{ section.name | capitalize }}</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+  <main id="main" class="main-page">
+
+    <!--==========================
+      Speaker Details Section
+    ============================-->
+    <section id="event-details" class="wow fadeIn">
+      <div class="container">
+        <div class="section-header">
+          <h2> Register Here</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="details">
+              <h2>Calculate your fee</h2>
+	      
+	      <p>
+	    	<ul>
+		  <li>Go through the fee calculator</li>
+		  <li>Pay the total amount, note your transaction Id </li>
+		  <li>Click the register link and fill in the details</li>
+		</ul>
+	      </p>
+	      <p>
+	      <div class="calculator">
+		  <button v-on:click="reset()">clear</button>
+		<ul>
+		  <li v-for="event in events">
+		      {{event.title}} {{event.fee}} 
+		      <button v-if="event.disc" v-on:click="addAmount(event.disc)">group</button>
+		      <button v-if="event.disc" v-on:click="remove(event.disc)">remove group</button>
+		      <button v-on:click="addAmount(event.fee)">individual</button>
+		      <button v-on:click="remove(event.fee)">remove individual</button>
+		  </li>
+		  <li v-for="item in workshop">
+		      {{item.title}} <button v-on:click="remove(item.discfee)">remove {{item.discfee}} group</button> <button v-on:click="addAmount(item.discfee)"> add {{item.discfee}} group</button>  <button v-on:click="remove(item.fee)"> remove{{item.fee}} individual</button>
+<button v-on:click="addAmount(item.fee)"> add {{item.fee}} individual</button>
+		  </li>
+		 </ul>
+		 <div class="total"> Please pay {{total}} at {{accountDetails}} </div>
+	      </div>
+	      After you have made the payment(through neft/imps/UPI) and noted the transaction id, click down below and enter your details.
+	      <div>
+		  <button> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSsqNxBCOuvOJWzE1NeUUfiT16vjAEpXNRWnzwfKV4W9Ve0Q/viewform?usp=sf_link">Register</a></button>
+	      </div>
+	      </p>
+           <div class="social">
+         
+              <a href="https://twitter.com/intent/tweet?text=http://trika.org.in&button_hashtag=Trika" class="twitter"><i class="fa fa-twitter"></i></a>
+
+  <!-- Your share button code -->
+    <div class="fb-share-button" 
+    data-href="http://trika.org.in/quiz.html" 
+    data-layout="button_count">
+    </div>
+                <a href="" hidden="true"><i class="fa fa-google-plus"></i></a>
+                <a href="" hidden="true"><i class="fa fa-linkedin"></i></a>
+                </div>
+
+          </div>
+
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+         
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Trika</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <!--<script src="lib/jquery/jquery-migrate.min.js"></script>-->
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <!--<script src="lib/venobox/venobox.min.js"></script>-->
+  <!--<script src="lib/owlcarousel/owl.carousel.min.js"></script>-->
+
+  <!-- Contact Form JavaScript File -->
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+    <script src="lib/vue/vue.js"></script>
+
+    <script src="js/script2.js"></script>
+</div>
+</body>
+
+</html>
+</html>
