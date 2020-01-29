@@ -23,7 +23,7 @@ var app = new Vue({
 	    'show':'false'},
  	'Registration': {'name':'Registration',
 	    'url':'register.html',
-	    'show':'false'},
+	    'show':'true'},
 	'events': {'name':'events',
 	    'url':'#events',
 	    'show':'true'},
