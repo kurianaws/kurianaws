@@ -65,10 +65,10 @@ var app = new Vue({
 	    'text':'ER&DCI Institute of Technology is the academic wing of Centre for Development of Advanced Computing (CDAC) Thiruvananthapuram(Vellayambalam). The institute offers postgraduate programs in VLSI & Embedded Systems and Cyber Forensic & Information Security and is affiliated with APJ Abdul Kalam Technological University. The meritorious students of both M.Tech courses will get a chance to do their academic projects as part of the live projects in CDAC and get guidance from industry experts in various groups of CDAC Thiruvananthapuram. The Department of Electronics was established in the year 2006 and offers a postgraduate programme in Electronics and Communication Engineering with specialization in VLSI and Embedded Systems.'}
 ],
     speakers:[
-	{'groupdesc':'group of 3','type':'conference','name':'Capt(IN) Bijli V.M','pic':'img/eventpics/bijli.jpg','url':'bijli.html','title':'Introduction To Hardware Reliability Tools','show':'true'},
-	{'groupdesc':'group of 3','type':'conference','name':'Mr. Biju Nair','pic':'img/eventpics/biju.jpeg','url':'biju.html','title':'Industry 4.0: A Preview On Industrial Iot','show':'true'},
-	{'groupdesc':'group of 3','type':'conference','name':'Dr. Brijesh Madhavan','pic':'img/eventpics/brijesh.jpeg','url':'brijesh.html','title':'Role of AI in Electronics Industry Of The Future','show':'true'},
-	{'groupdesc':'group of 3','type':'workshop','name':'Libin TT','pic':'img/eventpics/libint.jpg','url':'libin.html','title':'Microprocessor Architecture And Implementations','show':'true'}
+	{'groupdesc':'group of 3','type':'conference','desig':'Officer in charge, Naval Technical Group, Indian Navy, Kochi','name':'Capt(IN) Bijli V.M, Officer in charge, Naval Technical Group, Indian Navy, Kochi','pic':'img/eventpics/bijli.jpg','url':'bijli.html','title':'Introduction To Hardware Reliability Tools','show':'true'},
+	{'groupdesc':'group of 3','type':'conference','name':'Mr. Biju Nair, CTO ALpha Ori Technologies, Silicon Valley, USA','pic':'img/eventpics/biju.jpeg','url':'biju.html','title':'Industry 4.0: A Preview On Industrial Iot','show':'true'},
+	{'groupdesc':'group of 3','type':'conference','name':'Dr. Brijesh Madhavan, CEO, Curvelogics, Tehcnopark','pic':'img/eventpics/brijesh.jpeg','url':'brijesh.html','title':'Role of AI in Electronics Industry Of The Future','show':'true'},
+	{'groupdesc':'group of 3','type':'workshop','name':'Libin TT, Hardware Design Group, CDAC, Thrivananthapuram','pic':'img/eventpics/libint.jpg','url':'libin.html','title':'Microprocessor Architecture And Implementations','show':'true'}
 
     ],
     address:'ER&DCI Institute of Technology CDAC Campus Vellayambalam Thiruvananthapuram India, PIN - 695033',
