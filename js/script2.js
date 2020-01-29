@@ -29,7 +29,7 @@ var app = new Vue({
 	    'show':'true'},
 	'schedule': {'name':'schedule',
 	    'url':'#schedule',
-	    'show':'false'},
+	    'show':'true'},
 	'gallery': {'name':'gallery',
 	    'url':'#gallery',
 	    'show':'false'},
@@ -40,7 +40,22 @@ var app = new Vue({
 	    'url':'#contact',
 	    'show':'true'}
     },
-
+    schedule:{
+	'day1': [
+	{'name':'Qriosity','day1':'10.00 am - 12.00 pm'},
+	{'name':'Be The Stark','day1':'3.00 pm - 5.00 pm','day2':'2.00 pm - 4.00 pm'},
+	{'name':'Electricuit','day1':'2.00 pm - 3.00 pm','day2':'9.00 am -10.00 am'},
+	{'name':'Resist The Flow','day1':'10 am - 12.30 pm'},
+	{'name':'Technical Conference','day1':'10.00 am - 4.00 pm'}
+	],
+	'day2': [
+	{'name':'Liner','day2':'9.00 am - 10.00 am'},
+	{'name':'Be The Stark','day1':'3.00 pm - 5.00 pm','day2':'2.00 pm - 4.00 pm'},
+	{'name':'Electricuit','day1':'2.00 pm - 3.00 pm','day2':'9.00 am -10.00 am'},
+	{'name':'Liner','day2':'9.00 am - 10.00 am'},
+	{'name':'Workshop','day2':'9.00 am - 4.00 pm'}
+	]
+    },
     events:[
 	{'name':'Photography','lr':'img/eventpicslr/photo.jpg','pic':'img/eventpics/photo.jpg','url':'photo.html','title':'Photography','tagline':'"Taking an image, freezing a moment, reveals how rich reality truly is"'},
 	{'limit':4,'count':0,'active':'true','name':'Liner','lr':'img/eventpicslr/liner.png','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner','tagline':'"Robots will light up the track"','fee':200,'disc':150,'groupdesc':'maximum group of 4'},
