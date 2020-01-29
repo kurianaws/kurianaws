@@ -876,6 +876,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 9px;
 }
 
+#event-details .register a{
+  color: #fff;
+}
+
 #event-details .details .social a:hover {
   background: #f82249;
   color: #fff;

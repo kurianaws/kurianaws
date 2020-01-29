@@ -67,8 +67,8 @@
     <!--==========================
       Speaker Details Section
     ============================-->
-    <section id="event-details" class="wow fadeIn">
-      <div class="container">
+    <section id="event-details" class="wow fadeIn ">
+      <div class="container register">
         <div class="section-header">
           <h2> Register Here</h2>
           <p></p>
@@ -98,7 +98,7 @@
 			  <tbody>
 			      <tr v-for="event in events" v-if="event.closed!='true'">
 				  <td>
-				      <a :href="event.url" >{{event.title}}</a>
+				      <button class="btn btn-info"><a :href="event.url" >{{event.title}}</a></button>
 				  </td>
 				  <td>
 				      <span v-if="event.group==='true'" type="radio" name="group" value=event.title > Choose only one among <b>simultaneous</b> events <br/> Prelims on Day-1: {{event.day1}}</span>
