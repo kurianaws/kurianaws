@@ -98,7 +98,7 @@
 			  <tbody>
 			      <tr v-for="event in events" v-if="event.closed!='true'">
 				  <td>
-				      <button  class="btn-primary btn-info"><a :href="event.url" >{{event.title}}</a></button>
+				      <a :href="event.url" >{{event.title}}</a>
 				  </td>
 				  <td>
 				      <span v-if="event.group==='true'" type="radio" name="group" value=event.title > Choose only one among <b>simultaneous</b> events <br/> Prelims on Day-1: {{event.day1}}</span>
