@@ -116,8 +116,8 @@
 					  {{event.count}} in group
 				      </span>
 				      <div v-if="event.active==='true'">
-					<button v-if="event.disc" v-on:click="inc(event)" v-on:click="addAmount(event.disc)" class="btn btn-success">+ group</button>
-					<button v-if="event.disc" v-on:click="dec(event)"  v-on:click="remove(event.disc)" class="btn btn-warning">- group</button>
+					<button v-if="event.disc" v-on:click="inc(event)"  class="btn btn-success">+ group</button>
+					<button v-if="event.disc" v-on:click="dec(event)"   class="btn btn-warning">- group</button>
 					<button v-on:click="addAmount(event.fee)" class="btn btn-success">+ individual</button>
 					<button v-on:click="remove(event.fee)" class="btn btn-warning">- individual</button>
 				     </div>

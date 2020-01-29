@@ -101,7 +101,6 @@ var app = new Vue({
   },
   methods:{
       addAmount: function(amount){
-	  console.log(amount)
 	  this.total=Number(this.total)+Number(amount);
       },
       remove: function(amount){
@@ -114,13 +113,25 @@ var app = new Vue({
       },
       inc: function(event){
 	  if (event.count+1<= event.limit){
-	    event.count=event.count+1;
+	  	      if (event.count<2){
+		  event.count=2;
+		  this.total=Number(this.total)+Number(event.disc*2);
+	      }else{
+		  event.count=event.count+1;
+		  this.total=Number(this.total)+Number(event.disc);
+	      }
 	  }
       },
       dec: function(event){
-	    if (event.count-1>=0){
+	    if (event.count<=2){
+		if (event.count==2){
+		    event.count=0;
+		    this.total=Number(this.total)- Number(event.disc*2);
+		}
+	    }else{
 		event.count=event.count-1;
-	}
+		this.total=Number(this.total)- Number(event.disc);
+	    }
       }
   },
    filters: {
