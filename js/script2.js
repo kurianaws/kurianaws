@@ -22,7 +22,7 @@ var app = new Vue({
 	    'url':'https://docs.google.com/forms/d/e/1FAIpQLSd5O0gTFUBQegIuNLBh6hRjmsM0F5px9UoJPAandnDubcCt_g/viewform?usp=sf_link',
 	    'show':'false'},
  	'Registration': {'name':'Registration',
-	    'url':'https://docs.google.com/forms/d/e/1FAIpQLSdSsqNxBCOuvOJWzE1NeUUfiT16vjAEpXNRWnzwfKV4W9Ve0Q/viewform?usp=sf_link',
+	    'url':'register.html',
 	    'show':'false'},
 	'events': {'name':'events',
 	    'url':'#events',
