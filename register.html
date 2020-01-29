@@ -96,9 +96,9 @@
 			      <th>Add/Remove</th>
 			  </thead>
 			  <tbody>
-			      <tr v-for="event in events">
+			      <tr v-for="event in events" v-if="event.closed!='true'">
 				  <td>
-				      {{event.title}}  
+				      <button  class="btn-primary btn-info"><a :href="event.url" >{{event.title}}</a></button>
 				  </td>
 				  <td>
 				      <span v-if="event.group==='true'" type="radio" name="group" value=event.title > Choose only one among <b>simultaneous</b> events <br/> Prelims on Day-1: {{event.day1}}</span>
@@ -112,7 +112,7 @@
 
 				  </td>
 				  <td>
-				      <span v-if="event.count!=undefined">
+				      <span v-if="event.count!=undefined && event.count>0" >
 					  {{event.count}} in group
 				      </span>
 				      <div v-if="event.active==='true'">

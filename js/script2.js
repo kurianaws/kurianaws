@@ -57,15 +57,15 @@ var app = new Vue({
 	]
     },
     events:[
-	{'name':'Photography','lr':'img/eventpicslr/photo.jpg','pic':'img/eventpics/photo.jpg','url':'photo.html','title':'Photography','tagline':'"Taking an image, freezing a moment, reveals how rich reality truly is"'},
+	{'closed':'true','name':'Photography','lr':'img/eventpicslr/photo.jpg','pic':'img/eventpics/photo.jpg','url':'photo.html','title':'Photography','tagline':'"Taking an image, freezing a moment, reveals how rich reality truly is"'},
 	{'limit':4,'count':0,'active':'true','name':'Liner','lr':'img/eventpicslr/liner.png','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner','tagline':'"Robots will light up the track"','fee':200,'disc':150,'groupdesc':'maximum group of 4'},
 	{'active':'true','name':'Qriosity','lr':'img/eventpicslr/quriosity.png','pic':'img/eventpics/quriosity.png','url':'quiz.html','title':'Qriosity','tagline':'"Prove your knowledge"','fee':200},
 	{'group':'true','active':'true','name':'Be The Stark','lr':'img/eventpicslr/bethestark.png','pic':'img/eventpics/bethestark.png','url':'bethestark.html','title':'Be The Stark','tagline':'"Show you are worthy"','fee':300,'day1':'3:00 pm - 5:00 pm'},
 	{'group':'true','active':'true','name':'Pitch Perfect','lr':'img/eventpicslr/pitch.png','pic':'img/eventpics/pitch.png','url':'pitch.html','title':'Pitch Perfect','tagline':'"Sell your idea "','fee':200,'day1':'2:00 pm - 5:00 pm'},
 	{'group':'true','active':'true','name':'Electricuit','lr':'img/eventpicslr/electricuit.png','pic':'img/eventpics/electricuit.png','url':'electricuit.html','title':'Electricuit','tagline':'"Bug the bugs"','fee':250,'day1':'2:00 pm - 3:00 pm'},
 	{'active':'true','name':'Resist The Flow','lr':'img/eventpicslr/resisttheflow.png','pic':'img/eventpics/resisttheflow.png','url':'resist.html','title':'Resist The Flow','tagline':'"Block it like ohm"','fee':100},
-	{'active':'true','name':'Technical Conference','lr':'','pic':'img/eventpics/talk.png','url':'conf.html','title':'Technical Conference','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3'},
-	{'active':'true','name':'Workshop','lr':'','pic':'img/eventpics/workshop.png','url':'work.html','title':'Workshop','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3'}
+	{'active':'true','name':'Technical Conference','lr':'','pic':'img/eventpics/talk.png','url':'conf.html','title':'Technical Conference','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3','limit':-1},
+	{'active':'true','name':'Workshop','lr':'','pic':'img/eventpics/workshop.png','url':'work.html','title':'Workshop','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3','limit':-1}
     ],
     value:'',
     aboutus:[
@@ -112,7 +112,7 @@ var app = new Vue({
 	  this.total=0;
       },
       inc: function(event){
-	  if (event.count+1<= event.limit){
+	  if (event.count+1<= event.limit && event.limit!= -1){
 	  	      if (event.count<2){
 		  event.count=2;
 		  this.total=Number(this.total)+Number(event.disc*2);
@@ -120,9 +120,14 @@ var app = new Vue({
 		  event.count=event.count+1;
 		  this.total=Number(this.total)+Number(event.disc);
 	      }
+	  }else{
+	      //conf
+
+		  this.total=Number(this.total)+Number(event.disc);
 	  }
       },
       dec: function(event){
+	  if (event.limit!=-1){
 	    if (event.count<=2){
 		if (event.count==2){
 		    event.count=0;
@@ -132,6 +137,11 @@ var app = new Vue({
 		event.count=event.count-1;
 		this.total=Number(this.total)- Number(event.disc);
 	    }
+	  }else{
+	      if (this.total-event.disc>=0){
+		this.total=Number(this.total)- Number(event.disc);
+	      }
+	  }
       }
   },
    filters: {
