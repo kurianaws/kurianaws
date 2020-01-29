@@ -128,10 +128,14 @@
 		      </table>
 		  </div>
 		  <button v-on:click="reset()" class="btn btn-info">clear</button>
-		  <div class="total"> Please pay &#8377{{total}} at {{accountDetails}}</div>
+		  <div class="total"> Total &#8377{{total}} </div>
+		  <div><p>
+		    {{accountDetails}}
+		      </p>
+		  </div>
 	      </div>
 	      After you have made the payment(through neft/imps/UPI) and noted the transaction id, click down below and enter your details.<br/>
-	      Warning: Please check your selection carefully, money once transferred <b>will not be refunded</b>. 
+	      <span class="alert-warning">Warning: Please check your selection carefully, money once transferred <b>will not be refunded</b></span>. 
 	      <div>
 		  <button class="btn btn-success"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSsqNxBCOuvOJWzE1NeUUfiT16vjAEpXNRWnzwfKV4W9Ve0Q/viewform?usp=sf_link">Register</a></button>
 	      </div>

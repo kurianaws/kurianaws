@@ -75,7 +75,7 @@ var app = new Vue({
     contact:'Ananth: 9188728597 Girish: 9497270564',
       Email: 'trika2k20@gmail.com',
       home:'index.html',
-     accountDetails:'',
+     accountDetails:'A/C Name: DEP OF ECE ER DCI IT, A/C Number: 40192010011484, IFSC Code: SYNB0004019, Bank: Syndicate Bank, Branch: CDAC CAMPUS, Vellayamablam',
     showimg:false,
     showvid:true,
     total:0,
@@ -90,7 +90,7 @@ var app = new Vue({
 	  this.total=Number(this.total)+Number(amount);
       },
       remove: function(amount){
-	  if (this.total-Number(amount)>0){
+	  if (this.total-Number(amount)>=0){
 	    this.total=this.total-Number(amount);
 	  }
       }, 
