@@ -200,12 +200,12 @@
           <!-- Schdule Day 1 -->
           <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
 	    <div class="row schedule-item">
-		  <div class="col-md-6"><span>inauguration</span></div>
+		  <div class="col-md-6"><span>Inauguration</span></div>
 		  <div class="col-md-6"><time>9.00 am - 10.00 am</time></div>
               </div>
 
 	      <div class="row schedule-item" v-for="item in schedule.day1"  >
-		  <div class="col-md-6"><span>{{item.name}}</span></div>
+		  <div class="col-md-6"><span>{{item.name |capitalize }}</span></div>
 		  <div class="col-md-6"><time>{{item.day1}}</time></div>
               <div class="col-md-10">
                 <p></p>
@@ -223,7 +223,7 @@
           <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
 
 	      <div class="row schedule-item" v-for="item in schedule.day2"  >
-		  <div class="col-md-6"><span>{{item.name}}</span></div>
+		  <div class="col-md-6"><span>{{item.name|capitalize}}</span></div>
 		  <div class="col-md-6"><time>{{item.day2}}</time></div>
               <div class="col-md-10">
                 <p></p>
@@ -237,11 +237,10 @@
 
           </div>
 <!-- End Schdule Day 2 -->
-
         </div>
 
       </div>
-
+	
     </section>
 
 
