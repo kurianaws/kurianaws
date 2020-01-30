@@ -25,7 +25,7 @@ var app = new Vue({
 	    'url':'https://docs.google.com/forms/d/e/1FAIpQLSd5O0gTFUBQegIuNLBh6hRjmsM0F5px9UoJPAandnDubcCt_g/viewform?usp=sf_link',
 	    'show':'false'},
  	'Registration': {'name':'Registration',
-	    'url':'/register.html',
+	    'url':'register.html',
 	    'show':'true'},
 	'events': {'name':'events',
 	    'url':'#events',
