@@ -59,8 +59,8 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
 	    <li v-for="section in sections" v-if="section.show==='true'">
-		<a v-if="section.name==='Registration'" :href=`${home+section.url}`>{{ section.name | capitalize }}</a>
-		<a v-else :href=`${section.url}`>{{ section.name | capitalize }}</a>
+		<a v-if="section.name==='Registration'" :href=`${section.url}`>{{ section.name | capitalize }}</a>
+		<a v-else :href=`${home+section.url}`>{{ section.name | capitalize }}</a>
 	    </li>
         </ul>
       </nav><!-- #nav-menu-container -->
