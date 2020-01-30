@@ -4,11 +4,12 @@ var app = new Vue({
      setTimeout(()=>{ this.showimg = true; this.showvid=false}, 35000);
   },
   data: {
-    domain:'http://trika.org.in',
+    domain:'trika.org.in',
     port:'',
     tagline:"Next dimension of technology",
     sections:{ 
-	'home': {'name':'home',
+	'home': {
+	    'name':'home',
 	    'url':'#intro',
 	    'show':'true'},
 	'about': {'name':'about',

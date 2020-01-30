@@ -67,7 +67,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
 	  <li v-for="section in sections" v-if="section.show==='true'"> 
-<a :href="domain+port+section.url">{{ section.name | capitalize }}</a>    
+	      <a :href=`${section.url}`>{{ section.name | capitalize }}</a>    
 	  </li>
 	       </ul>
       </nav><!-- #nav-menu-container -->
