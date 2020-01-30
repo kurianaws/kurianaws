@@ -4,6 +4,8 @@ var app = new Vue({
      setTimeout(()=>{ this.showimg = true; this.showvid=false}, 35000);
   },
   data: {
+    domain:'http://trika.org.in',
+    port:'',
     tagline:"Next dimension of technology",
     sections:{ 
 	'home': {'name':'home',
@@ -22,7 +24,7 @@ var app = new Vue({
 	    'url':'https://docs.google.com/forms/d/e/1FAIpQLSd5O0gTFUBQegIuNLBh6hRjmsM0F5px9UoJPAandnDubcCt_g/viewform?usp=sf_link',
 	    'show':'false'},
  	'Registration': {'name':'Registration',
-	    'url':'register.html',
+	    'url':'/register.html',
 	    'show':'true'},
 	'events': {'name':'events',
 	    'url':'#events',
