@@ -57,7 +57,10 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-    <li v-for="section in sections" v-if="section.show==='true'"> <a :href="'index.html/'+section.url">{{ section.name | capitalize }}</a></li>
+	    <li v-for="section in sections" v-if="section.show==='true'">
+		<a v-if="section.name==='Registration'" :href=`${section.url}`>{{ section.name | capitalize }}</a>
+		<a v-else :href=`${home+section.url}`>{{ section.name | capitalize }}</a>
+	    </li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -207,7 +210,7 @@
   <script src="js/main.js"></script>
     <script src="lib/vue/vue.js"></script>
 
-    <script src="js/script2.js"></script>
+    <script src="js/script3.js"></script>
 </div>
 </body>
 

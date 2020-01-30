@@ -54,8 +54,10 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-
-    <li v-for="section in sections" v-if="section.show==='true'">  <a :href="domain+port+section.url">{{ section.name | capitalize }}</a></li>
+	    <li v-for="section in sections" v-if="section.show==='true'">
+		<a v-if="section.name==='Registration'" :href=`${home+section.url}`>{{ section.name | capitalize }}</a>
+		<a v-else :href=`${section.url}`>{{ section.name | capitalize }}</a>
+	    </li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -183,7 +185,7 @@ Biju is an avid cricket fan is helping to build cricket in USA through his leade
   <script src="js/main.js"></script>
   <script src="lib/vue/vue.js"></script>
 
-  <script src="js/script2.js"></script>
+  <script src="js/script3.js"></script>
 </div>
 </body>
 
