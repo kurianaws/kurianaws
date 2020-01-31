@@ -107,12 +107,17 @@
 				  </td>
 				  <td>
 				      <span v-if="event.group==='true'" type="radio" name="group" value=event.title > Choose only one among <b>simultaneous</b> events <br/> Prelims on Day-1: {{event.day1}}</span>
-				    <div v-if="event.disc">
+				    <div v-if="event.disc || event.description">
+					<div v-if="event.groupdesc">
 					  <p>
 						  {{event.groupdesc}}
 					  </p>
 					  <li>individual &#8377{{event.fee}}</li>
 					  <li>group &#8377{{event.disc}}</li>
+					</div>
+					<div v-if="event.description">
+						{{event.description}}
+					</div>
 				     </div>
 
 				  </td>
@@ -123,8 +128,14 @@
 				      <div v-if="event.active==='true'">
 					<button v-if="event.disc" v-on:click="inc(event)"  class="btn btn-success">+ group</button>
 					<button v-if="event.disc" v-on:click="dec(event)"   class="btn btn-warning">- group</button>
-					<button v-on:click="addAmount(event)" class="btn btn-success">+ individual</button>
-					<button v-on:click="remove(event)" class="btn btn-warning">- individual</button>
+					<button v-on:click="addAmount(event)" class="btn btn-success">
+						<span v-if="event.team==='true'"> + team</span>
+						<span v-else> + individual</span>
+</button>
+					<button v-on:click="remove(event)" class="btn btn-warning">
+						<span v-if="event.team==='true'">- team</span>
+						<span v-else> - individual</span>
+					</button>
 				     </div>
 				  </td>
 				  <td>

@@ -62,7 +62,7 @@ var app = new Vue({
     events:[
 	{'closed':'true','name':'Photography','lr':'img/eventpicslr/photo.jpg','pic':'img/eventpics/photo.jpg','url':'photo.html','title':'Photography','tagline':'"Taking an image, freezing a moment, reveals how rich reality truly is"'},
 	{'amount':0,'limit':4,'count':0,'active':'true','name':'Liner','lr':'img/eventpicslr/liner.png','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner','tagline':'"Robots will light up the track"','fee':200,'disc':150,'groupdesc':'maximum group of 4'},
-	{'amount':0,'active':'true','name':'Qriosity','lr':'img/eventpicslr/quriosity.png','pic':'img/eventpics/quriosity.png','url':'quiz.html','title':'Qriosity','tagline':'"Prove your knowledge"','fee':200},
+	{'team':'true','description':'competition for team of two','amount':0,'active':'true','name':'Qriosity','lr':'img/eventpicslr/quriosity.png','pic':'img/eventpics/quriosity.png','url':'quiz.html','title':'Qriosity','tagline':'"Prove your knowledge"','fee':200},
 	{'amount':0,'group':'true','active':'true','name':'Be The Stark','lr':'img/eventpicslr/bethestark.png','pic':'img/eventpics/bethestark.png','url':'bethestark.html','title':'Be The Stark','tagline':'"Show you are worthy"','fee':300,'day1':'3:00 pm - 5:00 pm'},
 	{'amount':0,'group':'true','active':'true','name':'Pitch Perfect','lr':'img/eventpicslr/pitch.png','pic':'img/eventpics/pitch.png','url':'pitch.html','title':'Pitch Perfect','tagline':'"Sell your idea "','fee':200,'day1':'2:00 pm - 5:00 pm'},
 	{'amount':0,'group':'true','active':'true','name':'Electricuit','lr':'img/eventpicslr/electricuit.png','pic':'img/eventpics/electricuit.png','url':'electricuit.html','title':'Electricuit','tagline':'"Bug the bugs"','fee':250,'day1':'2:00 pm - 3:00 pm'},
