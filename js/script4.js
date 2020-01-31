@@ -45,18 +45,19 @@ var app = new Vue({
     },
     schedule:{
 	'day1': [
-	{'name':'Qriosity','day1':'10.00 am - 12.00 pm'},
-	{'name':'Be The Stark','day1':'3.00 pm - 5.00 pm','day2':'2.00 pm - 4.00 pm'},
+	{'name':'Technical Conference','day1':'11.00 am - 5.00 pm'},
+	{'name':'Resist The Flow','day1':'10 am - 12.00 pm'},
 	{'name':'Electricuit','day1':'2.00 pm - 3.00 pm','day2':'9.00 am -10.00 am'},
-	{'name':'Resist The Flow','day1':'10 am - 12.30 pm'},
-	{'name':'Technical Conference','day1':'10.00 am - 4.00 pm'}
+	{'name':'Pitch Perfect','day1':'2.00 pm - 5.00 pm'},
+	{'name':'Be The Stark','day1':'3.00 pm - 5.00 pm','day2':'2.00 pm - 4.00 pm'},
 	],
 	'day2': [
+	{'name':'Workshop','day2':'9.00 am - 4.30 pm'},
+	{'name':'Electricuit','day1':'2.00 pm - 3.00 pm','day2':'9.00 am - 12.00 pm'},
 	{'name':'Liner','day2':'9.00 am - 10.00 am'},
+	{'name':'Pitch Perfect','day1':'2.00 pm - 5.00 pm','day2':'10 am - 12.00 pm '},
+	{'name':'Qriosity','day2':'10.00 am - 3.00 pm'},
 	{'name':'Be The Stark','day1':'3.00 pm - 5.00 pm','day2':'2.00 pm - 4.00 pm'},
-	{'name':'Electricuit','day1':'2.00 pm - 3.00 pm','day2':'9.00 am -10.00 am'},
-	{'name':'Liner','day2':'9.00 am - 10.00 am'},
-	{'name':'Workshop','day2':'9.00 am - 4.00 pm'}
 	]
     },
     events:[
