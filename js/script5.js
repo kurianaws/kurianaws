@@ -16,7 +16,7 @@ var app = new Vue({
 	"pic":"img/sponsor/genrobotics.png","hide":"true"},
 	{"name":"greenbergresorts","url":"http://greenbergresorts.com/",
 	"pic":"img/sponsor/green.png"},
-	{"name":"Dar Es Salam Resto","url":"",
+	{"name":"Dar Es Salam Resto","url":"https://www.facebook.com/pg/daressalaamresto/about",
 	"pic":"img/sponsor/multicusine.png"},
 	{"name":"OJ Studio","url":"",
 	"pic":"img/sponsor/ojfilms.png"},
