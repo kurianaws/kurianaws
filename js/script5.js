@@ -4,6 +4,21 @@ var app = new Vue({
      setTimeout(()=>{ this.showimg = true; this.showvid=false}, 35000);
   },
   data: {
+  	sponsors:[
+  	{"name":"indus motor",
+  	 "url":"https://www.indusmotor.com",
+	"pic": "img/sponsor/indus.jpg"},
+	{"name":"sbi life","url":"https://www.sbilife.co.in/",
+	"pic":"img/sponsor/sbilife.png"},
+	{"name":"system operating center","url":"http://soccomputers.com/",
+	"pic":"img/sponsor/soc.jpg"},
+	{"name":"genrobotics","url":"https://www.genrobotics.org/",
+	"pic":"img/sponsor/genrobotics.png"},
+	{"name":"greenbergresorts","url":"http://greenbergresorts.com/",
+	"pic":"img/sponsor/green.png"},
+	{"name":"Dar Es Salam Resto","url":"",
+	"pic":"img/sponsor/multicusine.png"}
+	],
     domain:'trika.org.in',
     port:'',
     tagline:"Next dimension of technology",
@@ -38,7 +53,7 @@ var app = new Vue({
 	    'show':'false'},
 	'supporters': {'name':'supporters',
 	    'url':'#supporters',
-	    'show':'false'},
+	    'show':'true'},
 	'contact': {'name':'contact',
 	    'url':'#contact',
 	    'show':'true'}
