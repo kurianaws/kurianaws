@@ -17,7 +17,9 @@ var app = new Vue({
 	{"name":"greenbergresorts","url":"http://greenbergresorts.com/",
 	"pic":"img/sponsor/green.png"},
 	{"name":"Dar Es Salam Resto","url":"",
-	"pic":"img/sponsor/multicusine.png"}
+	"pic":"img/sponsor/multicusine.png"},
+	{"name":"OJ Studio","url":"",
+	"pic":"img/sponsor/ojfilms.png"},
 	],
     domain:'trika.org.in',
     port:'',
