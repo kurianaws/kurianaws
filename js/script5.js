@@ -18,7 +18,7 @@ var app = new Vue({
 	"pic":"img/sponsor/green.png"},
 	{"name":"Dar Es Salam Resto","url":"https://www.facebook.com/pg/daressalaamresto/about",
 	"pic":"img/sponsor/multicusine.png"},
-	{"name":"OJ Studio","url":"",
+	{"name":"OJ Studio","url":"https://instagram.com/oj_films_",
 	"pic":"img/sponsor/ojfilms.png"},
 	],
     domain:'trika.org.in',
