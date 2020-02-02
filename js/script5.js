@@ -13,7 +13,7 @@ var app = new Vue({
 	{"name":"system operating center","url":"http://soccomputers.com/",
 	"pic":"img/sponsor/soc.jpg"},
 	{"name":"genrobotics","url":"https://www.genrobotics.org/",
-	"pic":"img/sponsor/genrobotics.png"},
+	"pic":"img/sponsor/genrobotics.png","hide":"true"},
 	{"name":"greenbergresorts","url":"http://greenbergresorts.com/",
 	"pic":"img/sponsor/green.png"},
 	{"name":"Dar Es Salam Resto","url":"",
