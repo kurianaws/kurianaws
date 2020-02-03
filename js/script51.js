@@ -78,15 +78,15 @@ var app = new Vue({
 	]
     },
     events:[
-	{'closed':'true','name':'Photography','lr':'img/eventpicslr/photo.jpg','pic':'img/eventpics/photo.jpg','url':'photo.html','title':'Photography','tagline':'"Taking an image, freezing a moment, reveals how rich reality truly is"'},
-	{'amount':0,'limit':4,'count':0,'active':'true','name':'Liner','lr':'img/eventpicslr/liner.png','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner','tagline':'"Robots will light up the track"','fee':200,'disc':150,'groupdesc':'maximum group of 4'},
-	{'team':'true','description':'competition for team of two','amount':0,'active':'true','name':'Qriosity','lr':'img/eventpicslr/quriosity.png','pic':'img/eventpics/quriosity.png','url':'quiz.html','title':'Qriosity','tagline':'"Prove your knowledge"','fee':200},
-	{'amount':0,'group':'true','active':'true','name':'Be The Stark','lr':'img/eventpicslr/bethestark.png','pic':'img/eventpics/bethestark.png','url':'bethestark.html','title':'Be The Stark','tagline':'"Show you are worthy"','fee':300,'day1':'3:00 pm - 5:00 pm'},
-	{'amount':0,'group':'true','active':'true','name':'Pitch Perfect','lr':'img/eventpicslr/pitch.png','pic':'img/eventpics/pitch.png','url':'pitch.html','title':'Pitch Perfect','tagline':'"Sell your idea "','fee':200,'day1':'2:00 pm - 5:00 pm'},
-	{'team':'true','amount':0,'group':'true','active':'true','name':'Electricuit','lr':'img/eventpicslr/electricuit.png','pic':'img/eventpics/electricuit.png','url':'electricuit.html','title':'Electricuit','tagline':'"Bug the bugs"','fee':250,'day1':'2:00 pm - 3:00 pm'},
-	{'amount':0,'active':'true','name':'Resist The Flow','lr':'img/eventpicslr/resisttheflow.png','pic':'img/eventpics/resisttheflow.png','url':'resist.html','title':'Resist The Flow','tagline':'"Block it like ohm"','fee':100},
-	{'amount':0,'active':'true','name':'Technical Conference','lr':'','pic':'img/eventpics/talk.png','url':'conf.html','title':'Technical Conference','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3','limit':-1},
-	{'amount':0,'active':'true','name':'Workshop','lr':'','pic':'img/eventpics/workshop.png','url':'work.html','title':'Workshop','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3','limit':-1}
+	{'selectedindividual':false,'selectedgroup':false,'closed':'true','name':'Photography','lr':'img/eventpicslr/photo.jpg','pic':'img/eventpics/photo.jpg','url':'photo.html','title':'Photography','tagline':'"Taking an image, freezing a moment, reveals how rich reality truly is"'},
+	{'selectedindividual':false,'selectedgroup':false,'amount':0,'limit':4,'count':0,'active':'true','name':'Liner','lr':'img/eventpicslr/liner.png','pic':'img/eventpics/liner.png','url':'liner.html','title':'Liner','tagline':'"Robots will light up the track"','fee':200,'disc':150,'groupdesc':'maximum group of 4'},
+	{'selectedindividual':false,'selectedgroup':false,'team':'true','description':'competition for team of two','amount':0,'active':'true','name':'Qriosity','lr':'img/eventpicslr/quriosity.png','pic':'img/eventpics/quriosity.png','url':'quiz.html','title':'Qriosity','tagline':'"Prove your knowledge"','fee':200},
+	{'selectedindividual':false,'selectedgroup':false,'amount':0,'group':'true','active':'true','name':'Be The Stark','lr':'img/eventpicslr/bethestark.png','pic':'img/eventpics/bethestark.png','url':'bethestark.html','title':'Be The Stark','tagline':'"Show you are worthy"','fee':300,'day1':'3:00 pm - 5:00 pm'},
+	{'selectedindividual':false,'selectedgroup':false,'amount':0,'group':'true','active':'true','name':'Pitch Perfect','lr':'img/eventpicslr/pitch.png','pic':'img/eventpics/pitch.png','url':'pitch.html','title':'Pitch Perfect','tagline':'"Sell your idea "','fee':200,'day1':'2:00 pm - 5:00 pm'},
+	{'selectedindividual':false,'selectedgroup':false,'team':'true','amount':0,'group':'true','active':'true','name':'Electricuit','lr':'img/eventpicslr/electricuit.png','pic':'img/eventpics/electricuit.png','url':'electricuit.html','title':'Electricuit','tagline':'"Bug the bugs"','fee':250,'day1':'2:00 pm - 3:00 pm'},
+	{'selectedindividual':false,'selectedgroup':false,'amount':0,'active':'true','name':'Resist The Flow','lr':'img/eventpicslr/resisttheflow.png','pic':'img/eventpics/resisttheflow.png','url':'resist.html','title':'Resist The Flow','tagline':'"Block it like ohm"','fee':100},
+	{'selectedindividual':false,'selectedgroup':false,'amount':0,'active':'true','name':'Technical Conference','lr':'','pic':'img/eventpics/talk.png','url':'conf.html','title':'Technical Conference','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3','limit':-1},
+	{'selectedindividual':false,'selectedgroup':false,'amount':0,'active':'true','name':'Workshop','lr':'','pic':'img/eventpics/workshop.png','url':'work.html','title':'Workshop','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3','limit':-1}
     ],
     value:'',
     aboutus:[
@@ -122,10 +122,13 @@ var app = new Vue({
   },
   methods:{
       addAmount: function(event){
+	  event.selectedindividual=true;
 	  this.total=Number(this.total)+Number(event.fee);
 	  event.amount=event.amount+event.fee;
       },
       remove: function(event){
+	  event.selectedindividual=true;
+	  this.total=Number(this.total)+Number(event.fee);
 	  if (this.total-Number(event.fee)>=0){
 	    this.total=this.total-Number(event.fee);
 	    event.amount=event.amount- event.fee;
@@ -137,6 +140,7 @@ var app = new Vue({
 	    this.events.forEach(function(event,index){ event.count=0;})
       },
       inc: function(event){
+	  event.selectedgroup=true;
 	  if (event.count+1<= event.limit && event.limit!= -1){
 	  	      if (event.count<2){
 		  event.count=2;
@@ -153,6 +157,7 @@ var app = new Vue({
 	  }
       },
       dec: function(event){
+	  event.selectedgroup=true;
 	  if (event.limit!=-1){
 	    if (event.count<=2){
 		if (event.count==2){
