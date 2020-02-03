@@ -91,14 +91,17 @@
 		  <li>Click the register link and fill in the details</li>
 		</ul>
 	      </p>
+		  <p class="alert-warning">Disclaimer: This page is meant only for information. Any event(row) select <b>only</b> regular or discounted prize at a time. The event coordinators/webadmin or the institute will not be responsible for partial or incorrect payments. All event fees are listed in respective event page(s).  Any accidental entries can be reset by clicking the clear button. Please do not cite this page for any financial claims.</p>
 	      <p>
+
 	      <div class="calculator">
 		  <div class="table-responsive">
 		      <table class="table table-striped">
 			  <thead >
 			      <th>Event</th>
 			      <th>Description</th>
-			      <th>Add/Remove</th>
+			      <th>Discounted Group Price </th>
+			      <th>Regular Individual/team Price </th>
 			      <th>Added</th>
 		  
 			  </thead>
@@ -130,6 +133,8 @@
 				      <div v-if="event.active==='true'">
 					<button v-if="event.disc" v-on:click="inc(event)"  class="btn btn-success">+ group</button>
 					<button v-if="event.disc" v-on:click="dec(event)"   class="btn btn-warning">- group</button>
+				 </td>
+				 <td>
 					<button v-on:click="addAmount(event)" class="btn btn-success">
 						<span v-if="event.team==='true'"> + team</span>
 						<span v-else> + individual</span>
