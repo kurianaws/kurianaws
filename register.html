@@ -133,7 +133,6 @@
 				      <div v-if="event.active==='true'">
 					<div v-if="event.selectedindividual==false">
 					<button v-if="event.disc" v-on:click="inc(event)"  class="btn btn-success">+ group</button>
-					<!--<button v-if="event.disc" v-on:click="dec(event)"   class="btn btn-warning">- group</button>-->
 					</div>
 				 </td>
 				 <td>
@@ -142,11 +141,7 @@
 						<span v-if="event.team==='true'"> + team</span>
 						<span v-else> + individual</span>
 </button>
-					<!--<button v-on:click="remove(event)" class="btn btn-warning">-->
-						<!--<span v-if="event.team==='true'">- team</span>-->
-						<!--<span v-else> - individual</span>-->
-					<!--</button>-->
-				    </div>
+					   </div>
 				     </div>
 				  </td>
 				  <td>
