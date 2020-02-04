@@ -1905,6 +1905,7 @@ margin:0 0 7px 0;
 }
 .registration{
     text-align:right;
+    background-color:#6d7dd3;
 }
 
 .registration .col-lg-12{
@@ -1916,4 +1917,11 @@ margin:0 0 7px 0;
 }
 .calculator tbody td .btn-success{
     left:0;
+}
+.register-button{
+  background-color:#1f5566;
+}
+
+.register-button a{
+    color:white;
 }
