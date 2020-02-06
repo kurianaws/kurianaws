@@ -12,6 +12,8 @@ var app = new Vue({
 	"pic":"img/sponsor/sbilife.png"},
 	{"name":"system operating center","url":"http://soccomputers.com/",
 	"pic":"img/sponsor/soc.jpg"},
+	{"name":"IEEE Kerala","url":"https://ieeekerala.org",
+	"pic":"img/sponsor/ieee.jpg"},
 	{"name":"genrobotics","url":"https://www.genrobotics.org/",
 	"pic":"img/sponsor/genrobotics.png","hide":"true"},
 	{"name":"greenbergresorts","url":"http://greenbergresorts.com/",
