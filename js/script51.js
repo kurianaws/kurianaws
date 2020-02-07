@@ -402,7 +402,7 @@ var app = new Vue({
 	{"name":"IEEE Kerala","url":"https://ieeekerala.org",
 	"pic":"img/sponsor/ieee.jpg"},
 	{"name":"genrobotics","url":"https://www.genrobotics.org/",
-	"pic":"img/sponsor/genrobotics.png","hide":"true"},
+	"pic":"img/sponsor/genrobotics.png","hide":"false"},
 	{"name":"greenbergresorts","url":"http://greenbergresorts.com/",
 	"pic":"img/sponsor/green.png"},
 	{"name":"Dar Es Salam Resto","url":"https://www.facebook.com/pg/daressalaamresto/about",
