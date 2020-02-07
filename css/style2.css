@@ -254,8 +254,8 @@ h6 {
 /* Nav Meu Container */
 
 #nav-menu-container {
-  float: right;
-  margin: 0;
+  float: left;
+  margin-left:22%;
 }
 
 /* Nav Meu Styling */
