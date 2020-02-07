@@ -421,7 +421,7 @@ var app = new Vue({
 	'about': {'name':'about',
 	    'url':'#about',
 	    'show':'true'},
-	'work': {'name':'workshops',
+	'work': {'name':'speakers',
 	    'url':'#work',
 	    'show':'true'},
 	'location': {'name':'location',
