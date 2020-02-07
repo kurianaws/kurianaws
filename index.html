@@ -198,10 +198,10 @@
 
 	<h3 class="sub-heading">Welcome to {{address}}, you can confirm your participation at the helpdesk</h3>
 
-        <div class="tab-content row justify-content-center">
+        <div class="tab-content row schedule-tab">
 
           <!-- Schdule Day 1 -->
-          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+          <div role="tabpanel" class="col-lg-6 tab-pane fade show active" id="day-1">
 	    <div class="row schedule-item">
 		  <div class="col-md-6"><span>Inauguration</span></div>
 		  <div class="col-md-6"><time>9.00 am - 10.00 am</time></div>
@@ -223,7 +223,7 @@
           </div>
           <!-- End Schdule Day 1 -->
 
-          <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
+          <div role="tabpanel" class="col-lg-6 tab-pane fade" id="day-2">
 
 	      <div class="row schedule-item" v-for="item in schedule.day2"  >
 		  <div class="col-md-6"><span>{{item.name|capitalize}}</span></div>

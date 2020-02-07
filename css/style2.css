@@ -908,6 +908,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 #schedule {
   padding: 60px 0 60px 0;
 }
+.schedule-tab{
+    text-align: center;
+    justify-content: center !important;
+}
 
 #schedule .nav-tabs {
   text-align: center;
