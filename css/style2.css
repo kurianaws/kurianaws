@@ -467,8 +467,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro {
   width: 100%;
-  height: 100vh;
-  background-size: cover;
+  height: 81vh;
+  background-color:black;*/
   /*overflow: hidden;*/
   position: relative;
   opacity:100;
@@ -495,10 +495,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 100%;
 }
 #introimg {
-  min-width: 100%;
+  max-width: 70%;
   overflow: hidden;
   position: absolute;
-  opacity:100;
+  opacity:80;
+  padding-top:3px;
+  top:9%;
 }
 
 .aboutus{
@@ -544,6 +546,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   flex-direction: column;
   text-align: center;
   padding: 0 15px;
+  background: black;
 }
 
 #intro h1 {
@@ -1927,7 +1930,7 @@ margin:0 0 7px 0;
 
 .flip-clock{
     display:-webkit-box;
-    padding-top:58%;
+    padding-top:9%;
     padding-right:25%;
 }
 
