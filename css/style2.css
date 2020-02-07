@@ -472,6 +472,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   /*overflow: hidden;*/
   position: relative;
   opacity:100;
+  display:flex;
+  align-content:center;
 }
 
 .registration
@@ -1935,7 +1937,6 @@ margin:0 0 7px 0;
 .flip-clock{
     display:-webkit-box;
     padding-top:50%;
-    padding-right:25%;
 }
 
 .flip-clock__piece {
