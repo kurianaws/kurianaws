@@ -80,10 +80,36 @@
 
         <div class="row">
           <div class="col-md-6">
-            <img src="img/eventpics/pitch.png" alt="Quiz" class="img-fluid">
+            <img src="img/eventpics/pitch.png" alt="Quiz" class="img-fluid" >
+          </div>
+          <div class="col-md-6">
+<section  class="section-with-bg wow fadeInUp">
+
+      <div class="container flex-row">
+        <div class="section-header">
+          <h2>Sponsor</h2>
+        </div>
+
+        <div  class="row no-gutters supporters-wrap clearfix">
+
+          <div v-for="sponsor in sponsors"  v-if="sponsor.hide!='true' && sponsor.pitch=='true'"class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <a :href="sponsor.url">
+                <img :src="sponsor.pic" class="img-fluid" :alt="sponsor.name">
+              </a>
+            </div>
           </div>
 
-          <div class="col-md-6">
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+
             <div class="details">
               <h2>Pitch Perfect</h2>
 	      <p>
