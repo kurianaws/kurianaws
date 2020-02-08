@@ -53,19 +53,6 @@ h6 {
   visibility: hidden;
 }
 
-/* Prelaoder */
-
-#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
-}
-
 /* Back to top button */
 
 .back-to-top {
@@ -1873,8 +1860,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     position:absolute;
     font-family: 'Inconsolata', monospace;
     font-weight:bold;
-    font-size:x-large;
-    top:3%;
+    font-size:3vh;
+    top:5vh;
 }
 @font-face{
 
@@ -1917,7 +1904,7 @@ margin:0 0 7px 0;
 }
 
 .registration .col-lg-12{
-    padding-right:11%;
+    text-align:center;
 }
 
 .calculator tbody td .btn-warning{
