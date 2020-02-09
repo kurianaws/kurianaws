@@ -392,14 +392,15 @@ var app = new Vue({
   },
   data: {
   	sponsors:[
-  
   {"name":"Kerala state IT MISSION",
   "url":"https://itmission.kerala.gov.in",
   "pic": "img/sponsor/keralaIT.png",
  "bethestark":"true"},
-  {"name":"Kerala Startup Mission","url":"https://startupmission.kerala.gov.in",
+  {"name":"Kerala Startup Mission",
+    "url":"https://startupmission.kerala.gov.in",
   "pic":"img/sponsor/keralaStartup.jpg","hide":"false","pitch":"true"},
-  {"name":"genrobotics","url":"https://www.genrobotics.org/",
+  {"name":"genrobotics",
+   "url":"https://www.genrobotics.org/",
    "pic":"img/sponsor/genrobotics.png",
   "hide":"false",
   "liner":"true"},
@@ -494,8 +495,8 @@ var app = new Vue({
 	{'selectedindividual':false,'selectedgroup':false,'amount':0,'group':'true','active':'true','name':'Pitch Perfect','lr':'img/eventpicslr/pitch.png','pic':'img/eventpics/pitch.png','url':'pitch.html','title':'Pitch Perfect','tagline':'"Sell your idea "','fee':200,'day1':'2:00 pm - 5:00 pm'},
 	{'selectedindividual':false,'selectedgroup':false,'team':'true','amount':0,'group':'true','active':'true','name':'Electricuit','lr':'img/eventpicslr/electricuit.png','pic':'img/eventpics/electricuit.png','url':'electricuit.html','title':'Electricuit','tagline':'"Bug the bugs"','fee':250,'day1':'2:00 pm - 3:00 pm'},
 	{'selectedindividual':false,'selectedgroup':false,'amount':0,'active':'true','name':'Resist The Flow','lr':'img/eventpicslr/resisttheflow.png','pic':'img/eventpics/resisttheflow.png','url':'resist.html','title':'Resist The Flow','tagline':'"Block it like ohm"','fee':100},
-	{'selectedindividual':false,'selectedgroup':false,'amount':0,'active':'true','name':'Technical Conference','lr':'','pic':'img/eventpics/talk.png','url':'conf.html','title':'Technical Conference','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3','limit':-1},
-	{'selectedindividual':false,'selectedgroup':false,'amount':0,'active':'true','name':'Workshop','lr':'','pic':'img/eventpics/workshop.png','url':'work.html','title':'Workshop','tagline':'','fee':500,'disc':1250,'groupdesc':'group of 3','limit':-1}
+	{'selectedindividual':false,'selectedgroup':false,'amount':0,'active':'true','name':'Technical Conference','lr':'','pic':'img/eventpics/talk.png','url':'conf.html','title':'Technical Conference','tagline':'','fee':300,'disc':750,'groupdesc':'group of 3','limit':-1},
+	{'selectedindividual':false,'selectedgroup':false,'amount':0,'active':'true','name':'Workshop','lr':'','pic':'img/eventpics/workshop.png','url':'work.html','title':'Workshop','tagline':'','fee':300,'disc':750,'groupdesc':'group of 3','limit':-1}
     ],
     value:'',
     aboutus:[

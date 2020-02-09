@@ -1201,6 +1201,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: scale(1.2);
 }
 
+#supporters .supporter-logo img{
+    color:black
+}
+
+
 #supporters img {
   transition: all 0.4s ease-in-out;
 }
