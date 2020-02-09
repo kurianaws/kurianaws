@@ -86,9 +86,18 @@
           </div>
 
           <div class="col-md-6">
+<div class="flex-row">
+          <div v-for="sponsor in sponsors"  v-if="sponsor.resist=='true'" class="col-md-12" style="align-content: center;text-align: center;margin-right: 20%;">
+              <a :href="sponsor.url">
+                <img :src="sponsor.pic" class="img-fluid" :alt="sponsor.name">
+              </a>
+          </div>
+      </div>
+
+
             <div class="details">
-		<h2>Resist the flow</h2>
-		<p><b>"Block it like ohm"</b></p>
+		<h2 class="tagline">Resist the flow</h2>
+		<p class="tagline"><b>"Block it like ohm"</b></p>
 		<p>Are you ready to
 			Block the flow &
 			Bag the prize ??</p>

@@ -83,37 +83,22 @@
             <img src="img/eventpics/pitch.png" alt="Quiz" class="img-fluid" >
           </div>
           <div class="col-md-6">
-<section  class="section-with-bg wow fadeInUp owl-carousel event-detail">
-
-      <div class="container flex-row">
-        <div class="section-header">
-          <h2>Sponsor</h2>
-        </div>
-
-        <div  class="row no-gutters supporters-wrap clearfix">
-
-          <div v-for="sponsor in sponsors"  v-if="sponsor.hide!='true' && sponsor.pitch=='true'"class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
+<div class="flex-row">
+          <div v-for="sponsor in sponsors"  v-if="sponsor.pitch=='true'" class="col-md-12" style="align-content: center;text-align: center;margin-right: 20%;">
               <a :href="sponsor.url">
                 <img :src="sponsor.pic" class="img-fluid" :alt="sponsor.name">
               </a>
-            </div>
           </div>
-
-        </div>
-
       </div>
-
-    </section>
 
 
 
 
 
             <div class="details">
-              <h2>Pitch Perfect</h2>
+              <h2 class="tagline">Pitch Perfect</h2>
 	      <p>
-	      <p> <b>"Sell your idea  "</b>
+	      <p class="tagline"> <b>"Sell your idea  "</b>
 	      </p>Make it Simple but SIGNIFICANT..
 Got a groundbreaking idea that could be the next gem in the crown of technology ?
 Pitch your ideas and step into the world of technocrats.

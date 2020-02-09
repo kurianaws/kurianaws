@@ -1886,6 +1886,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size:3vh;
     top:5vh;
 }
+.details .tagline{
+    text-align:center !important;
+}
 @font-face{
 
     font-family: 'Inconsolata', monospace;

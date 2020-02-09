@@ -407,6 +407,9 @@ var app = new Vue({
   {"name":"indus motor",
   "url":"https://www.indusmotor.com",
   "pic": "img/sponsor/indus.jpg"},
+  {"name":"t7",
+      "url":"www.t7wealth.com",
+      "pic":"img/sponsor/t7.png","qriosity":"true","electricuit":"true","resist":"true"},
   {"name":"IEEE Kerala",
       "url":"https://ieeekerala.org",
   "pic":"img/sponsor/ieee.jpg"
