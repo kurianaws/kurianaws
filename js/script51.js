@@ -472,19 +472,19 @@ var app = new Vue({
     },
     schedule:{
 	'day1': [
-	{'name':'Technical Conference','day1':'11.00 am - 5.00 pm'},
-	{'name':'Resist The Flow','day1':'10 am - 12.00 pm'},
-	{'name':'Electricuit','day1':'2.00 pm - 3.00 pm','day2':'9.00 am -10.00 am'},
-	{'name':'Pitch Perfect','day1':'2.00 pm - 5.00 pm'},
-	{'name':'Be The Stark','day1':'3.00 pm - 5.00 pm','day2':'2.00 pm - 4.00 pm'},
+	{'name':'Technical Conference','day1':'11.00 am - 5.00 pm','url':'conf.html'},
+	{'name':'Resist The Flow','day1':'10 am - 12.00 pm','url':'resist.html'},
+	{'name':'Electricuit','day1':'2.00 pm - 3.00 pm','day2':'9.00 am -10.00 am','url':'electricuit.html'},
+	{'name':'Pitch Perfect','day1':'2.00 pm - 5.00 pm','url':'pitch.html'},
+	{'name':'Be The Stark','day1':'3.00 pm - 5.00 pm','day2':'2.00 pm - 4.00 pm','url':'bethestark.html'},
 	],
 	'day2': [
-	{'name':'Workshop','day2':'9.00 am - 4.30 pm'},
-	{'name':'Electricuit','day1':'2.00 pm - 3.00 pm','day2':'9.00 am - 12.00 pm'},
-	{'name':'Liner','day2':'9.00 am - 10.00 am'},
-	{'name':'Pitch Perfect','day1':'2.00 pm - 5.00 pm','day2':'10 am - 12.00 pm '},
-	{'name':'Qriosity','day2':'10.00 am - 3.00 pm'},
-	{'name':'Be The Stark','day1':'3.00 pm - 5.00 pm','day2':'2.00 pm - 4.00 pm'},
+	{'name':'Workshop','day2':'9.00 am - 4.30 pm','url':'work.html'},
+	{'name':'Electricuit','day1':'2.00 pm - 3.00 pm','day2':'9.00 am - 12.00 pm','url':'electricuit.html'},
+	{'name':'Liner','day2':'9.00 am - 10.00 am','url':'liner.html'},
+	{'name':'Pitch Perfect','day1':'2.00 pm - 5.00 pm','day2':'10 am - 12.00 pm','url':'pitch.html'},
+	{'name':'Qriosity','day2':'10.00 am - 3.00 pm','url':'qriosity.html'},
+	{'name':'Be The Stark','day1':'3.00 pm - 5.00 pm','day2':'2.00 pm - 4.00 pm','url':'bethestark.html'},
 	]
     },
     events:[

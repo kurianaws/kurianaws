@@ -212,7 +212,7 @@
               </div>
 
 	      <div class="row schedule-item" v-for="item in schedule.day1"  >
-		  <div class="col-md-6"><span>{{item.name |capitalize }}</span></div>
+		   <div class="col-md-6"><a :href="item.url"><span>{{item.name |capitalize }}</span></a></div>
 		  <div class="col-md-6"><time>{{item.day1}}</time></div>
               <div class="col-md-10">
                 <p></p>
@@ -230,7 +230,7 @@
           <div role="tabpanel" class="col-lg-6 tab-pane fade" id="day-2">
 
 	      <div class="row schedule-item" v-for="item in schedule.day2"  >
-		  <div class="col-md-6"><span>{{item.name|capitalize}}</span></div>
+		  <div class="col-md-6"><a :href="item.url"><span>{{item.name|capitalize}}</span></a></div>
 		  <div class="col-md-6"><time>{{item.day2}}</time></div>
               <div class="col-md-10">
                 <p></p>
