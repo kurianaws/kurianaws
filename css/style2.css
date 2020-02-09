@@ -1177,6 +1177,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-left: 1px solid #e0e5fa;
   margin-bottom: 30px;
 }
+.event-detail .supporter-logo {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid #e0e5fa;
+  border-bottom: 1px solid #e0e5fa;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  width: 39vh;
+  height: 17vh;
+}
 
 #supporters .supporter-logo {
   padding: 30px;
