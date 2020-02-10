@@ -433,7 +433,7 @@ var app = new Vue({
   {
   "name":"LAB1 Global Bussiness Solutions",
   "url":"",
-  "pic": ""},
+  "pic": "img/sponsor/labone.jpeg"},
   {
   "name":"Trivandrum Chicken Corner",
   "url":"https://www.facebook.com/pages/category/Chicken-Joint/Trivandrum-Chicken-Corner-786682971465919/",
