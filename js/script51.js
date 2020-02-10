@@ -419,8 +419,13 @@ var app = new Vue({
   "pic":"img/sponsor/soc.jpg"},
 	{"name":"greenbergresorts","url":"http://greenbergresorts.com/",
 	"pic":"img/sponsor/green.png"},
+{
+  "name":"Pagoto",
+  "url":"https://www.instagram.com/thepagotowagon",
+  "pic": "img/sponsor/pagoto.png"},
+
   {"name":"sbi life","url":"https://www.sbilife.co.in/",
-	"pic":"img/sponsor/sbilife.png"},
+	"pic":"img/sponsor/sbilife.png","hide":"true"},
 	{"name":"Dar Es Salam Resto","url":"https://www.facebook.com/pg/daressalaamresto/about",
 	"pic":"img/sponsor/multicusine.png"},
 	{"name":"OJ Studio","url":"https://instagram.com/oj_films_",
