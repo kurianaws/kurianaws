@@ -438,6 +438,10 @@ var app = new Vue({
   "name":"Trivandrum Chicken Corner",
   "url":"https://www.facebook.com/pages/category/Chicken-Joint/Trivandrum-Chicken-Corner-786682971465919/",
   "pic": "img/sponsor/tvmchicken.png"},
+	{
+  "name":"Romansons",
+  "url":"https://www.romansons.net",
+  "pic": "img/sponsor/romansons.jpg"}
 	],
     domain:'trika.org.in',
     port:'',
