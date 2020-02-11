@@ -409,7 +409,7 @@ var app = new Vue({
   "pic": "img/sponsor/indus.jpg","hide":"false"},
   {"name":"t7",
       "url":"https://www.t7wealth.com",
-      "pic":"img/sponsor/t7.png","qriosity":"true","electricuit":"true","resist":"true"},
+      "pic":"img/sponsor/t7.png?=update","qriosity":"true","electricuit":"true","resist":"true"},
   {"name":"IEEE Kerala",
       "url":"https://ieeekerala.org",
   "pic":"img/sponsor/ieee.jpg"
