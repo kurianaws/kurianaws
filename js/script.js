@@ -406,7 +406,7 @@ var app = new Vue({
   "liner":"true"},
   {"name":"indus motor",
   "url":"https://www.indusmotor.com",
-  "pic": "img/sponsor/indus.jpg"},
+  "pic": "img/sponsor/indus.jpg","hide":"true"},
   {"name":"t7",
       "url":"https://www.t7wealth.com",
       "pic":"img/sponsor/t7.png","qriosity":"true","electricuit":"true","resist":"true"},
