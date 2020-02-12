@@ -319,7 +319,7 @@ var app = new Vue({
 	{'name':'Electricuit','day1':'2.00 pm - 3.00 pm','day2':'9.00 am - 12.00 pm','url':'electricuit.html'},
 	{'name':'Liner','day2':'9.00 am - 10.00 am','url':'liner.html'},
 	{'name':'Pitch Perfect','day1':'2.00 pm - 5.00 pm','day2':'10 am - 12.00 pm','url':'pitch.html'},
-	{'name':'Qriosity','day2':'10.00 am - 3.00 pm','url':'qriosity.html'},
+	{'name':'Qriosity','day2':'10.00 am - 3.00 pm','url':'quiz.html'},
 	{'name':'Be The Stark','day1':'3.00 pm - 5.00 pm','day2':'2.00 pm - 4.00 pm','url':'bethestark.html'},
 	]
     },
