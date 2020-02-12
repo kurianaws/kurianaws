@@ -129,6 +129,7 @@ watch: {
       this.diff = this.date - this.now
       if (this.diff <= 0 || this.stop) {
         this.diff = 0
+	this.show=false
         this.updateTime(3, 0)
       } else {
         this.updateTime(0, this.days)
