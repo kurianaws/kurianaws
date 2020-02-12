@@ -398,8 +398,10 @@ var app = new Vue({
 		  event.amount=event.amount+event.disc;
 	      }
 	  }else{
+	      if (event.limit==-1){
 		  this.total=Number(this.total)+Number(event.disc);
 		  event.amount=event.amount+event.disc;
+	      }
 	  }
       },
       dec: function(event){
