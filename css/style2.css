@@ -1940,6 +1940,9 @@ margin:0 0 7px 0;
 }
 .register-button{
   background-color:#1f5566;
+  width:44vw;
+  height:11vh;
+  font-size:5vh;
 }
 
 .register-button a{
@@ -2080,4 +2083,7 @@ margin:0 0 7px 0;
 }
 .white{
     color:white;
+}
+.account p{
+    color:#54089f !important;
 } 
