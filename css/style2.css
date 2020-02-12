@@ -2085,5 +2085,6 @@ margin:0 0 7px 0;
     color:white;
 }
 .account p{
-    color:#54089f !important;
+    background:#54089f !important;
+    color:white !important;
 } 
