@@ -265,7 +265,11 @@ var app = new Vue({
 	{
   "name":"Romansons",
   "url":"https://www.romansons.net",
-  "pic": "img/sponsor/romansons.jpg"}
+  "pic": "img/sponsor/romansons.jpg"},
+  {
+  "name":"Narayana Bhavan",
+  "url":"",
+  "pic": "img/sponsor/narayanab.jpg"}
 	],
     domain:'trika.org.in',
     port:'',
@@ -289,7 +293,7 @@ var app = new Vue({
 	    'show':'false'},
  	'Registration': {'name':'Registration',
 	    'url':'register.html',
-	    'show':'true'},
+	    'show':'false'},
 	'events': {'name':'events',
 	    'url':'#events',
 	    'show':'true'},
