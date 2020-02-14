@@ -1939,8 +1939,8 @@ margin:0 0 7px 0;
     left:0;
 }
 .register-button{
-  background-color:#1f5566;
-  width:44vw;
+  background-color:#222d46;
+  width:max-content;
   height:11vh;
   font-size:5vh;
 }
@@ -2088,3 +2088,13 @@ margin:0 0 7px 0;
     background:#54089f !important;
     color:white !important;
 } 
+.gallery-div{
+    top:63%;
+    position:absolute;
+}
+.gallery-button{
+    background-color:black;
+}
+.gallery-button a{
+    color: white;
+}

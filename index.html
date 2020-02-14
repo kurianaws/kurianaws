@@ -38,7 +38,7 @@
   <!--<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">-->
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.min.css?=update2" rel="stylesheet">
+  <link href="css/style.min.css?=update3" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: TheEvent
@@ -79,6 +79,7 @@
     <div class="intro-container wow fadeIn">
 	<span class="tagline">"{{tagline}}"</span>
 	<img id="introimg" src="img/logo.png" /> 
+	<div v-if="sections['gallery'].show==='true'"class="col-lg-12 gallery-div"><button class="btn btn-primary btn-info gallery-button"><a href="gallery.html">Gallery</a></button></>
 <!--<flip-count-down deadline="2020-2-14 10:00:00"></flip-count-down>-->
 	<!--<img id="introvid" v-show="showvid" src="vid/intro.gif"/> -->
     </div>
@@ -87,7 +88,7 @@
       <div class="registration">
         <div class="row">
           <div class="col-lg-12 ">
-	  <p><button class="btn btn-primary btn-info register-button"><a href="register.html">Register</a></button></p>
+	      <p><button class="btn btn-primary btn-info register-button"><b><a href="register.html">Register</a></b></button></p>
           </div>
 	</div>
 
