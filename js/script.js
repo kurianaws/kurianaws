@@ -268,7 +268,7 @@ var app = new Vue({
   "pic": "img/sponsor/romansons.jpg"},
   {
   "name":"Narayana Bhavan",
-  "url":"",
+  "url":"http://tastyspots.com/kerala/foodspots/narayana-bhavan",
   "pic": "img/sponsor/narayanab.jpg"}
 	],
     domain:'trika.org.in',
