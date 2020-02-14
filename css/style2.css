@@ -1163,6 +1163,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   z-index: 1;
 }
 
+#gallery .gallery-carousel img{
+  max-width: 46vw;
+}
+
 /*--------------------------------------------------------------
 # supporters Section
 --------------------------------------------------------------*/
@@ -1901,6 +1905,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .speaker img{
     max-width:40%;
+    border-radius:16px;
 }
 
 .poster{
