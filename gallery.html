@@ -114,16 +114,24 @@
         </div>
       </div>
 
-      <div class="row no-gutters supporters-wrap clearfix owl-carousel">
-	<a href="img/gallery/1.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/1.jpg" alt=""></a>
-	<a href="img/gallery/2.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/2.jpg" alt=""></a>
-	<a href="img/gallery/3.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/3.jpg" alt=""></a>
-	<a href="img/gallery/4.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/4.jpg" alt=""></a>
-	<a href="img/gallery/5.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/5.jpg" alt=""></a>
-	<a href="img/gallery/6.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/6.jpg" alt=""></a>
-	<a href="img/gallery/7.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/7.jpg" alt=""></a>
-	<a href="img/gallery/8.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/8.jpg" alt=""></a>
-      </div>
+<carousel>
+    <slide
+        data-index="0"
+        data-name="MySlideName"
+        @slideclick="handleSlideClick">
+	<div class="col-lg-6 gallery-carousel center"><img src="img/gallery/1.jpg" alt=""></div>
+    </slide>
+  </carousel>
+      <!--<div class="row no-gutters supporters-wrap clearfix owl-carousel">-->
+	<!--<a href="img/gallery/1.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/1.jpg" alt=""></a>-->
+	<!--<a href="img/gallery/2.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/2.jpg" alt=""></a>-->
+	<!--<a href="img/gallery/3.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/3.jpg" alt=""></a>-->
+	<!--<a href="img/gallery/4.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/4.jpg" alt=""></a>-->
+	<!--<a href="img/gallery/5.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/5.jpg" alt=""></a>-->
+	<!--<a href="img/gallery/6.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/6.jpg" alt=""></a>-->
+	<!--<a href="img/gallery/7.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/7.jpg" alt=""></a>-->
+	<!--<a href="img/gallery/8.jpg" class="col-lg-6 gallery-carousel center"><img src="img/gallery/8.jpg" alt=""></a>-->
+      <!--</div>-->
 
     </section>
 
@@ -269,6 +277,8 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
   <script src="lib/vue/vue.js"></script>
-  <script src="js/script.min.js?=update3"></script>
+  <script src="lib/vue-carousel.min.js"></script>
+  <script src="js/gallery.js"></script>
+  <!--<script src="js/script.min.js?=update3"></script>-->
 
 </html>
