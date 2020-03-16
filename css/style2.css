@@ -1886,8 +1886,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     position:absolute;
     font-family: 'Inconsolata', monospace;
     font-weight:bold;
-    font-size:2.5vw;
-    top:3.8vh;
+    /*font-size:2.5vw;*/
+	 top:3.8vh;
 }
 .details .tagline{
     text-align:center !important;
