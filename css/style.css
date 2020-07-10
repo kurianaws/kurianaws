@@ -528,6 +528,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color:#110b0bba;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
